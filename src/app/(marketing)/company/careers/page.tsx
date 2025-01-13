@@ -153,30 +153,36 @@ const openPositions = [
 
 const benefits = [
   {
-    title: "Health & Wellness",
+    title: "Compensation & Benefits",
     items: [
-      "Comprehensive health insurance",
-      "Mental health support",
-      "Wellness programs",
-      "Flexible time off"
-    ]
-  },
-  {
-    title: "Growth & Development",
-    items: [
-      "Learning & development budget",
-      "Conference attendance",
-      "Mentorship programs",
-      "Career advancement paths"
+      "Up to $600/month health insurance ($1200 for essential staff)",
+      "60% 401K match up to 6% of salary, immediate vesting",
+      "Performance bonuses $20K-$60K annually",
+      "20% annual raise on performance bonus after 1st year",
+      "Equity incentives and limited stock buyback post-profit",
+      "7.5% profit-based dividends from company stock"
     ]
   },
   {
     title: "Work-Life Balance",
     items: [
-      "Remote-first environment",
-      "Flexible working hours",
-      "Home office setup",
-      "Regular team events"
+      "30 days paid leave annually",
+      "4 months maternity & 2 months paternity leave",
+      "Fully remote work environment",
+      "Flexible holiday selection",
+      "20% time for personal projects",
+      "Performance bonuses for project breakthroughs"
+    ]
+  },
+  {
+    title: "Personal Development",
+    items: [
+      "$500 monthly wellbeing & development budget",
+      "$1000 annual home-office setup allowance",
+      "Customizable perks selection",
+      "Increased budgets for chosen benefits",
+      "Career advancement opportunities",
+      "Continuous learning support"
     ]
   }
 ] 
