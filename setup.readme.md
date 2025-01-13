@@ -78,4 +78,5 @@ npm run build:static
 - A `.nojekyll` file exists (created automatically by build:static)
 - CNAME is set to `norn.ai` if using custom domain 
 - The `docs` directory is created and contains the static files
-- If changing the domain, update the CNAME file and the `next.config.js` file
+- If changing the domain, update the CNAME file and the `next.config.js` file AND the `package.json` file
+- Git Repo is case sensitive (ex: Norn-site vs norn-site)
