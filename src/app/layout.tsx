@@ -12,7 +12,7 @@ interface RootLayoutProps {
 const basePath = process.env.NEXT_PUBLIC_BASEPATH || ''
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://norn.ai'),
+  metadataBase: new URL('https://www.norn.ai'),
   title: {
     template: '%s | Norn.ai',
     default: 'Norn.ai - Scaling Intelligence',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://norn.ai',
+    url: 'https://www.norn.ai',
     siteName: 'Norn.ai',
     title: 'Norn.ai - Scaling Intelligence',
     description: 'Human-like Intelligence, scalable and dynamic, powered by the ICOM cognitive architecture. Our SaaS solution pioneers breakthrough capabilities in concept learning, motivation, understanding, and reasoning.',
