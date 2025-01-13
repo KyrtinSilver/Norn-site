@@ -11,7 +11,7 @@ This is a Next.js static site using the App Router, TypeScript, Tailwind CSS, an
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/ci-psy-team/norn-site.git
+git clone https://github.com/KyrtinSilver/Norn-site.git
 cd norn-site
 ```
 
@@ -77,3 +77,5 @@ npm run build:static
 - The repository is configured to deploy from the correct branch/directory
 - A `.nojekyll` file exists (created automatically by build:static)
 - CNAME is set to `norn.ai` if using custom domain 
+- The `docs` directory is created and contains the static files
+- If changing the domain, update the CNAME file and the `next.config.js` file
