@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Protect sensitive files and directories
+Disallow: /.env*
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.next/
+Disallow: /src/app/api/
+Disallow: /styles/
+Disallow: /styles/*
+
+# Protect configuration files
+Disallow: /*.json$
+Disallow: /*.config.*
+Disallow: /*.lock
+Disallow: /*.sh
+Disallow: /*.md 

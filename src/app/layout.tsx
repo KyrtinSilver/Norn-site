@@ -4,6 +4,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { cn } from '@/lib/utils'
 import '@/app/globals.css'
 import type { Metadata } from 'next'
+import { SecurityHeaders } from '@/components/SecurityHeaders'
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -96,6 +97,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <SecurityHeaders />
         <meta 
           name="google-site-verification" 
           content="FBAnxcGjlVPcFnsCen-rLryTbhaqAoI6Yl_gufpmw-w" 
