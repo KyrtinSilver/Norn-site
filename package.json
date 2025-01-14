@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:static": "rm -rf .next out docs && NODE_ENV=production NEXT_PUBLIC_CUSTOM_DOMAIN=true NEXT_TELEMETRY_DISABLED=1 next build && mkdir -p docs && cp -r out/. docs/ && rm -rf out && touch docs/.nojekyll && echo 'norn.ai' > docs/CNAME",
-    "build:github": "rm -rf .next out docs && NODE_ENV=production NEXT_PUBLIC_BASEPATH=/Norn-site NEXT_TELEMETRY_DISABLED=1 next build && mkdir -p docs && cp -r out/. docs/ && rm -rf out && touch docs/.nojekyll",
+    "build:static": "rm -rf .next out docs && NODE_ENV=production NEXT_PUBLIC_CUSTOM_DOMAIN=true NEXT_TELEMETRY_DISABLED=1 NODE_OPTIONS=--no-warnings next build && mkdir -p docs && cp -r out/. docs/ && rm -rf out && touch docs/.nojekyll && echo 'norn.ai' > docs/CNAME",
+    "build:github": "rm -rf .next out docs && NODE_ENV=production NEXT_PUBLIC_BASEPATH=/Norn-site NEXT_TELEMETRY_DISABLED=1 NODE_OPTIONS=--no-warnings next build && mkdir -p docs && cp -r out/. docs/ && rm -rf out && touch docs/.nojekyll",
     "serve": "http-server docs -p 3000 --cors --spa"
   },
   "dependencies": {
