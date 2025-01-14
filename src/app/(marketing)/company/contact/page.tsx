@@ -4,90 +4,11 @@ import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MessageSquare, Mail, Globe, CheckCircle2, AlertCircle } from "lucide-react"
+import { MessageSquare, Mail, Globe } from "lucide-react"
 import { useState } from "react"
-import { toast } from "sonner"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
-
-  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    setIsSubmitting(true)
-
-    const formData = new FormData(event.currentTarget)
-    const data = {
-      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
-      name: formData.get('name'),
-      email: formData.get('email'),
-      subject: formData.get('subject'),
-      message: formData.get('message'),
-      from_name: 'Contact Form'
-    }
-
-    console.log('Form data:', data)
-    console.log('Web3Forms key:', process.env.NEXT_PUBLIC_WEB3FORMS_KEY)
-    console.log('Submitting to Web3Forms...')
-
-    try {
-      console.log('Making fetch request to Web3Forms...')
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-          'Origin': window.location.origin
-        },
-        mode: 'cors',
-        body: JSON.stringify(data),
-      })
-
-      console.log('Response status:', response.status)
-      console.log('Response headers:', Object.fromEntries(response.headers.entries()))
-      const result = await response.json()
-      console.log('Response data:', result)
-
-      if (!response.ok) {
-        throw new Error(result.message || 'Failed to send message')
-      }
-
-      toast.success("Message sent successfully! We'll get back to you soon.", {
-        className: "group",
-        style: {
-          backgroundColor: "hsl(var(--background))",
-          color: "hsl(var(--foreground))",
-          border: "1px solid hsl(var(--border))",
-        },
-        icon: (
-          <div className="text-primary dark:text-primary">
-            <CheckCircle2 className="h-4 w-4" />
-          </div>
-        ),
-      })
-      event.currentTarget.reset()
-    } catch (error: any) {
-      console.error('Contact form error:', error)
-      console.error('Error details:', {
-        message: error?.message,
-        stack: error?.stack,
-      })
-      toast.error("Failed to send message. Please try again.", {
-        className: "group",
-        style: {
-          backgroundColor: "hsl(var(--background))",
-          color: "hsl(var(--foreground))",
-          border: "1px solid hsl(var(--border))",
-        },
-        icon: (
-          <div className="text-destructive dark:text-destructive">
-            <AlertCircle className="h-4 w-4" />
-          </div>
-        ),
-      })
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
 
   return (
     <div className="py-24">
@@ -145,11 +66,26 @@ export default function ContactPage() {
             {/* Right Column - Form */}
             <div className="bg-muted/50 rounded-lg p-8">
               <form 
-                onSubmit={handleSubmit} 
-                className="space-y-6"
                 action="https://api.web3forms.com/submit"
                 method="POST"
+                className="space-y-6"
+                onSubmit={() => setIsSubmitting(true)}
               >
+                <input 
+                  type="hidden" 
+                  name="access_key" 
+                  value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY}
+                />
+                <input 
+                  type="hidden" 
+                  name="from_name" 
+                  value="Contact Form"
+                />
+                <input 
+                  type="hidden" 
+                  name="redirect" 
+                  value="https://norn.ai/company/contact/?success=true"
+                />
                 <div className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-[500] mb-2">Name</label>
