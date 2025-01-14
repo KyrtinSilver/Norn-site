@@ -17,6 +17,7 @@ export default function ContactPage() {
 
     const formData = new FormData(event.currentTarget)
     const data = {
+      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
       name: formData.get('name'),
       email: formData.get('email'),
       subject: formData.get('subject'),
@@ -24,39 +25,37 @@ export default function ContactPage() {
     }
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify(data),
       })
 
-      if (!response.ok) {
-        throw new Error('Failed to send message')
-      }
-
       const result = await response.json()
 
-      if (result.success) {
-        toast.success("Message sent successfully! We'll get back to you soon.", {
-          className: "group",
-          style: {
-            backgroundColor: "hsl(var(--background))",
-            color: "hsl(var(--foreground))",
-            border: "1px solid hsl(var(--border))",
-          },
-          icon: (
-            <div className="text-primary dark:text-primary">
-              <CheckCircle2 className="h-4 w-4" />
-            </div>
-          ),
-        })
-        event.currentTarget.reset()
-      } else {
-        throw new Error('Failed to send message')
+      if (!response.ok) {
+        throw new Error(result.message || 'Failed to send message')
       }
+
+      toast.success("Message sent successfully! We'll get back to you soon.", {
+        className: "group",
+        style: {
+          backgroundColor: "hsl(var(--background))",
+          color: "hsl(var(--foreground))",
+          border: "1px solid hsl(var(--border))",
+        },
+        icon: (
+          <div className="text-primary dark:text-primary">
+            <CheckCircle2 className="h-4 w-4" />
+          </div>
+        ),
+      })
+      event.currentTarget.reset()
     } catch (error) {
+      console.error('Contact form error:', error)
       toast.error("Failed to send message. Please try again.", {
         className: "group",
         style: {
