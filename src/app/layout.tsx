@@ -5,6 +5,21 @@ import '@/app/globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export const metadata = {
+  icons: {
+    icon: [
+      {
+        url: '/icons/icon-light.svg',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icons/icon-dark.svg',
+        media: '(prefers-color-scheme: dark)',
+      },
+    ],
+  },
+}
+
 export default function RootLayout({
   children,
 }: {
