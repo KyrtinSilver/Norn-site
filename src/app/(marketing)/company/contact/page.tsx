@@ -5,10 +5,48 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { MessageSquare, Mail, Globe } from "lucide-react"
-import { useState } from "react"
+import { useState, useRef } from "react"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const formRef = useRef<HTMLFormElement>(null)
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+      name: formData.get('name'),
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+      from_name: 'Contact Form'
+    }
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+
+      const result = await response.json()
+      
+      if (result.success) {
+        formRef.current?.reset()
+        window.location.href = 'https://norn.ai/company/contact/?success=true'
+      }
+    } catch (error) {
+      console.error('Contact form error:', error)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <div className="py-24">
@@ -66,26 +104,10 @@ export default function ContactPage() {
             {/* Right Column - Form */}
             <div className="bg-muted/50 rounded-lg p-8">
               <form 
-                action="https://api.web3forms.com/submit"
-                method="POST"
+                ref={formRef}
+                onSubmit={handleSubmit}
                 className="space-y-6"
-                onSubmit={() => setIsSubmitting(true)}
               >
-                <input 
-                  type="hidden" 
-                  name="access_key" 
-                  value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY}
-                />
-                <input 
-                  type="hidden" 
-                  name="from_name" 
-                  value="Contact Form"
-                />
-                <input 
-                  type="hidden" 
-                  name="redirect" 
-                  value="https://norn.ai/company/contact/?success=true"
-                />
                 <div className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-[500] mb-2">Name</label>
