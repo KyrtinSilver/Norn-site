@@ -35,12 +35,15 @@ export default function ContactPage() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          'Accept': 'application/json',
+          'Origin': window.location.origin
         },
+        mode: 'cors',
         body: JSON.stringify(data),
       })
 
       console.log('Response status:', response.status)
+      console.log('Response headers:', Object.fromEntries(response.headers.entries()))
       const result = await response.json()
       console.log('Response data:', result)
 
@@ -141,7 +144,12 @@ export default function ContactPage() {
 
             {/* Right Column - Form */}
             <div className="bg-muted/50 rounded-lg p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form 
+                onSubmit={handleSubmit} 
+                className="space-y-6"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+              >
                 <div className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-[500] mb-2">Name</label>
@@ -151,6 +159,7 @@ export default function ContactPage() {
                       required
                       placeholder="Your name"
                       disabled={isSubmitting}
+                      autoComplete="name"
                     />
                   </div>
                   <div>
@@ -162,6 +171,7 @@ export default function ContactPage() {
                       required
                       placeholder="you@example.com"
                       disabled={isSubmitting}
+                      autoComplete="email"
                     />
                   </div>
                   <div>
@@ -172,6 +182,7 @@ export default function ContactPage() {
                       required
                       placeholder="How can we help?"
                       disabled={isSubmitting}
+                      autoComplete="off"
                     />
                   </div>
                   <div>
@@ -183,6 +194,7 @@ export default function ContactPage() {
                       placeholder="Tell us more about your needs..."
                       className="min-h-[150px]"
                       disabled={isSubmitting}
+                      autoComplete="off"
                     />
                   </div>
                 </div>
