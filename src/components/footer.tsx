@@ -110,7 +110,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Norn. All rights reserved.</p>
+          <p>Copyright © {new Date().getFullYear()} Norn.ai - All rights reserved.</p>
         </div>
       </Container>
     </footer>

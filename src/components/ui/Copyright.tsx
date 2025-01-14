@@ -7,7 +7,7 @@ export const Copyright: FC = () => {
   
   return (
     <p className="text-sm text-muted-foreground">
-      Copyright © {currentYear} Norn AI. All rights reserved.
+      Copyright © {currentYear} Norn.ai - All rights reserved.
     </p>
   );
 }; 
