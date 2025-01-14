@@ -5,10 +5,11 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
+import { toast } from 'sonner'
+import { CheckCircle2, AlertCircle } from 'lucide-react'
 
 export default function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
-  const [message, setMessage] = useState('')
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -16,6 +17,7 @@ export default function ContactForm() {
 
     const formData = new FormData(event.currentTarget)
     const data = {
+      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
       name: formData.get('name'),
       email: formData.get('email'),
       subject: formData.get('subject'),
@@ -23,26 +25,36 @@ export default function ContactForm() {
     }
 
     try {
-      // In a real application, you would send this to your API endpoint
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify(data),
       })
 
+      const result = await response.json()
+
       if (!response.ok) {
-        throw new Error('Failed to send message')
+        throw new Error(result.message || 'Failed to send message')
       }
 
       setStatus('success')
-      setMessage('Thank you for your message. We will get back to you soon.')
+      toast.success('Message Sent!', {
+        description: 'Thank you for your message. We will get back to you soon.',
+        icon: <CheckCircle2 className="h-4 w-4" />,
+      })
       event.currentTarget.reset()
     } catch (error) {
       console.error('Contact form error:', error)
       setStatus('error')
-      setMessage('An error occurred. Please try again or email us directly at contact@norn.ai')
+      toast.error('Error', {
+        description: 'An error occurred. Please try again or email us directly at contact@norn.ai',
+        icon: <AlertCircle className="h-4 w-4" />,
+      })
+    } finally {
+      setStatus('idle')
     }
   }
 
@@ -105,14 +117,6 @@ export default function ContactForm() {
       >
         {status === 'submitting' ? 'Sending...' : 'Send Message'}
       </Button>
-
-      {message && (
-        <p className={`mt-4 text-sm ${
-          status === 'success' ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'
-        }`}>
-          {message}
-        </p>
-      )}
     </form>
   )
 }
