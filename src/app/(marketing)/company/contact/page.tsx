@@ -6,37 +6,32 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { MessageSquare, Mail, Globe, CheckCircle2, AlertCircle } from "lucide-react"
 import { useState, useRef } from "react"
+import { useRouter } from "next/navigation"
 import { toast } from "sonner"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const formRef = useRef<HTMLFormElement>(null)
+  const router = useRouter()
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
-    console.log('Form submission started...')
 
     const form = e.currentTarget
     const formData = new FormData(form)
     
-    // Log form data for debugging
-    console.log('Form data:', Object.fromEntries(formData.entries()))
-    
     try {
-      console.log('Sending request to Web3Forms...')
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formData
       })
 
-      console.log('Response status:', response.status)
       const result = await response.json()
-      console.log('Web3Forms response:', result)
       
       if (result.success) {
-        console.log('Form submission successful')
         form.reset()
+        // Show success toast
         toast.success("Message sent successfully! We'll get back to you soon.", {
           className: "group",
           style: {
@@ -49,14 +44,13 @@ export default function ContactPage() {
               <CheckCircle2 className="h-4 w-4" />
             </div>
           ),
-          duration: 3000,
+          duration: 2000,
         })
-        // Delay redirect to show the toast
-        setTimeout(() => {
-          window.location.href = 'https://norn.ai/company/contact/?success=true'
-        }, 3000)
+        
+        // Wait for toast to be seen before redirecting
+        await new Promise(resolve => setTimeout(resolve, 2000))
+        router.push('/company/contact/?success=true')
       } else {
-        console.error('Form submission failed:', result.message)
         toast.error(result.message || "Failed to send message. Please try again.", {
           className: "group",
           style: {
@@ -73,7 +67,6 @@ export default function ContactPage() {
         })
       }
     } catch (error) {
-      console.error('Contact form error:', error)
       toast.error("An error occurred. Please try again.", {
         className: "group",
         style: {
@@ -90,7 +83,6 @@ export default function ContactPage() {
       })
     } finally {
       setIsSubmitting(false)
-      console.log('Form submission completed')
     }
   }
 
