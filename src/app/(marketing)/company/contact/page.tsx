@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MessageSquare, Mail, Phone, Globe, CheckCircle2, AlertCircle } from "lucide-react"
+import { MessageSquare, Mail, Globe, CheckCircle2, AlertCircle } from "lucide-react"
 import { useState } from "react"
 import { toast } from "sonner"
 
@@ -22,6 +22,7 @@ export default function ContactPage() {
       email: formData.get('email'),
       subject: formData.get('subject'),
       message: formData.get('message'),
+      from_name: 'Contact Form'
     }
 
     try {
