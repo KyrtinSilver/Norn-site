@@ -24,7 +24,11 @@ export default function ContactForm() {
       message: formData.get('message'),
     }
 
+    console.log('Form submission data:', data)
+    console.log('Web3Forms key:', process.env.NEXT_PUBLIC_WEB3FORMS_KEY)
+
     try {
+      console.log('Attempting to submit to Web3Forms...')
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
@@ -34,7 +38,9 @@ export default function ContactForm() {
         body: JSON.stringify(data),
       })
 
+      console.log('Response status:', response.status)
       const result = await response.json()
+      console.log('Response data:', result)
 
       if (!response.ok) {
         throw new Error(result.message || 'Failed to send message')
