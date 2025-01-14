@@ -33,49 +33,39 @@ export default function PressPage() {
     event.preventDefault()
     setIsSubmitting(true)
 
-    const formData = new FormData(event.currentTarget)
-    const data = {
-      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
-      name: formData.get('name'),
-      email: formData.get('email'),
-      organization: formData.get('organization'),
-      role: formData.get('role'),
-      deadline: formData.get('deadline'),
-      message: formData.get('message'),
-      subject: 'Press Inquiry',
-      from_name: 'Press Form'
-    }
+    const form = event.currentTarget
+    const formData = new FormData(form)
+    formData.append('subject', 'Press Inquiry')
+    formData.append('from_name', 'Press Form')
+    formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '')
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(data),
+        body: formData
       })
 
       const result = await response.json()
 
-      if (!response.ok) {
+      if (result.success) {
+        form.reset()
+        toast.success("Message sent successfully! We'll get back to you soon.", {
+          className: "group",
+          style: {
+            backgroundColor: "hsl(var(--background))",
+            color: "hsl(var(--foreground))",
+            border: "1px solid hsl(var(--border))",
+          },
+          icon: (
+            <div className="text-primary dark:text-primary">
+              <CheckCircle2 className="h-4 w-4" />
+            </div>
+          ),
+          duration: 2000,
+        })
+      } else {
         throw new Error(result.message || 'Failed to send message')
       }
-
-      toast.success("Message sent successfully! We'll get back to you soon.", {
-        className: "group",
-        style: {
-          backgroundColor: "hsl(var(--background))",
-          color: "hsl(var(--foreground))",
-          border: "1px solid hsl(var(--border))",
-        },
-        icon: (
-          <div className="text-primary dark:text-primary">
-            <CheckCircle2 className="h-4 w-4" />
-          </div>
-        ),
-      })
-      event.currentTarget.reset()
     } catch (error) {
       console.error('Press form error:', error)
       toast.error("Failed to send message. Please try again.", {

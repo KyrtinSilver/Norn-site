@@ -15,48 +15,39 @@ export default function WhitepaperPage() {
     event.preventDefault()
     setIsSubmitting(true)
 
-    const formData = new FormData(event.currentTarget)
-    const data = {
-      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
-      name: formData.get('name'),
-      email: formData.get('email'),
-      company: formData.get('company'),
-      role: formData.get('role'),
-      message: formData.get('message'),
-      subject: 'Whitepaper Request',
-      from_name: 'Whitepaper Form'
-    }
+    const form = event.currentTarget
+    const formData = new FormData(form)
+    formData.append('subject', 'Whitepaper Request')
+    formData.append('from_name', 'Whitepaper Form')
+    formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '')
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(data),
+        body: formData
       })
 
       const result = await response.json()
 
-      if (!response.ok) {
+      if (result.success) {
+        form.reset()
+        toast.success("Request sent successfully! We'll get back to you soon.", {
+          className: "group",
+          style: {
+            backgroundColor: "hsl(var(--background))",
+            color: "hsl(var(--foreground))",
+            border: "1px solid hsl(var(--border))",
+          },
+          icon: (
+            <div className="text-primary dark:text-primary">
+              <CheckCircle2 className="h-4 w-4" />
+            </div>
+          ),
+          duration: 2000,
+        })
+      } else {
         throw new Error(result.message || 'Failed to send request')
       }
-
-      toast.success("Request sent successfully! We'll get back to you soon.", {
-        className: "group",
-        style: {
-          backgroundColor: "hsl(var(--background))",
-          color: "hsl(var(--foreground))",
-          border: "1px solid hsl(var(--border))",
-        },
-        icon: (
-          <div className="text-primary dark:text-primary">
-            <CheckCircle2 className="h-4 w-4" />
-          </div>
-        ),
-      })
-      event.currentTarget.reset()
     } catch (error) {
       console.error('Whitepaper form error:', error)
       toast.error("Failed to send request. Please try again.", {

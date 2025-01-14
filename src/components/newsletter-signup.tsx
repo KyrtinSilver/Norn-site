@@ -13,36 +13,39 @@ export default function NewsletterSignup() {
     event.preventDefault()
     setStatus('submitting')
 
-    const formData = new FormData(event.currentTarget)
-    const data = {
-      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
-      email: formData.get('email'),
-      subject: 'Newsletter Signup',
-      from_name: 'Newsletter Form',
-    }
+    const form = event.currentTarget
+    const formData = new FormData(form)
+    formData.append('subject', 'Newsletter Signup')
+    formData.append('from_name', 'Newsletter Form')
+    formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '')
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(data),
+        body: formData
       })
 
       const result = await response.json()
 
-      if (!response.ok) {
+      if (result.success) {
+        form.reset()
+        toast.success("Thanks for subscribing!", {
+          className: "group",
+          style: {
+            backgroundColor: "hsl(var(--background))",
+            color: "hsl(var(--foreground))",
+            border: "1px solid hsl(var(--border))",
+          },
+          icon: (
+            <div className="text-primary dark:text-primary">
+              <CheckCircle2 className="h-4 w-4" />
+            </div>
+          ),
+          duration: 2000,
+        })
+      } else {
         throw new Error(result.message || 'Failed to subscribe')
       }
-
-      setStatus('success')
-      toast.success('Subscribed!', {
-        description: 'Thank you for subscribing to our newsletter.',
-        icon: <CheckCircle2 className="h-4 w-4" />,
-      })
-      event.currentTarget.reset()
     } catch (error) {
       console.error('Newsletter signup error:', error)
       setStatus('error')
