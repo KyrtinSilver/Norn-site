@@ -49,8 +49,12 @@ export default function ContactPage() {
               <CheckCircle2 className="h-4 w-4" />
             </div>
           ),
+          duration: 3000,
         })
-        window.location.href = 'https://norn.ai/company/contact/?success=true'
+        // Delay redirect to show the toast
+        setTimeout(() => {
+          window.location.href = 'https://norn.ai/company/contact/?success=true'
+        }, 3000)
       } else {
         console.error('Form submission failed:', result.message)
         toast.error(result.message || "Failed to send message. Please try again.", {
@@ -65,6 +69,7 @@ export default function ContactPage() {
               <AlertCircle className="h-4 w-4" />
             </div>
           ),
+          duration: 5000,
         })
       }
     } catch (error) {
@@ -81,6 +86,7 @@ export default function ContactPage() {
             <AlertCircle className="h-4 w-4" />
           </div>
         ),
+        duration: 5000,
       })
     } finally {
       setIsSubmitting(false)
