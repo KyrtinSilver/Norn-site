@@ -25,7 +25,12 @@ export default function ContactPage() {
       from_name: 'Contact Form'
     }
 
+    console.log('Form data:', data)
+    console.log('Web3Forms key:', process.env.NEXT_PUBLIC_WEB3FORMS_KEY)
+    console.log('Submitting to Web3Forms...')
+
     try {
+      console.log('Making fetch request to Web3Forms...')
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
@@ -35,7 +40,9 @@ export default function ContactPage() {
         body: JSON.stringify(data),
       })
 
+      console.log('Response status:', response.status)
       const result = await response.json()
+      console.log('Response data:', result)
 
       if (!response.ok) {
         throw new Error(result.message || 'Failed to send message')
@@ -55,8 +62,12 @@ export default function ContactPage() {
         ),
       })
       event.currentTarget.reset()
-    } catch (error) {
+    } catch (error: any) {
       console.error('Contact form error:', error)
+      console.error('Error details:', {
+        message: error?.message,
+        stack: error?.stack,
+      })
       toast.error("Failed to send message. Please try again.", {
         className: "group",
         style: {
