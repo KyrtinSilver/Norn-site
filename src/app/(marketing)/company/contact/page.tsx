@@ -15,31 +15,27 @@ export default function ContactPage() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    const formData = new FormData(e.currentTarget)
-    const data = {
-      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
-      name: formData.get('name'),
-      email: formData.get('email'),
-      subject: formData.get('subject'),
-      message: formData.get('message'),
-      from_name: 'Contact Form'
-    }
+    const form = e.currentTarget
+    const formData = new FormData(form)
+    
+    // Add the access key and from_name to the FormData
+    formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '')
+    formData.append('from_name', 'Contact Form')
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(data)
+        body: formData
       })
 
       const result = await response.json()
+      console.log('Web3Forms response:', result)
       
       if (result.success) {
-        formRef.current?.reset()
+        form.reset()
         window.location.href = 'https://norn.ai/company/contact/?success=true'
+      } else {
+        console.error('Form submission failed:', result.message)
       }
     } catch (error) {
       console.error('Contact form error:', error)
@@ -108,6 +104,10 @@ export default function ContactPage() {
                 onSubmit={handleSubmit}
                 className="space-y-6"
               >
+                <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY || ''} />
+                <input type="hidden" name="from_name" value="Contact Form" />
+                <input type="hidden" name="subject" value="New Contact Form Submission" />
+                
                 <div className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-[500] mb-2">Name</label>
@@ -136,7 +136,7 @@ export default function ContactPage() {
                     <label htmlFor="subject" className="block text-sm font-[500] mb-2">Subject</label>
                     <Input 
                       id="subject" 
-                      name="subject"
+                      name="message_subject"
                       required
                       placeholder="How can we help?"
                       disabled={isSubmitting}
