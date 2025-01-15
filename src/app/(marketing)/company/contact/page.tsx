@@ -114,8 +114,8 @@ export default function ContactPage() {
                     <Mail className="w-5 h-5 mt-1 text-primary" />
                     <div>
                       <p className="font-[500]">Email</p>
-                      <a href="mailto:Admin@ArtificialGeneralIntelligenceInc.com" className="text-muted-foreground hover:text-primary transition-colors">
-                        Admin@ArtificialGeneralIntelligenceInc.com
+                      <a href="mailto:hello@norn.ai" className="text-muted-foreground hover:text-primary transition-colors">
+                        hello@norn.ai
                       </a>
                     </div>
                   </div>
