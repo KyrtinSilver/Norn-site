@@ -67,11 +67,11 @@ export function NavigationMenu() {
   return (
     <>
       <header className={cn(
-        "fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 transition-[border-color] duration-200 ease-in-out",
+        "fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/60 transition-[border-color] duration-300 ease-in-out",
         scrolled ? "border-border" : "border-border/10"
       )}>
         <Container className="flex h-[--header-height] items-center">
-          <Link href="/" className="flex items-center opacity-80 hover:opacity-100 transition-opacity duration-300">
+          <Link href="/" className="flex items-center opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out">
             <div className="relative w-[80px] h-[24px] flex items-center">
               <Image
                 src="/brand/logo-light.svg"

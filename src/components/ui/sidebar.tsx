@@ -16,14 +16,14 @@ export function AppSidebar() {
       <div className="border-b border-border">
         <div className="p-4 flex items-center justify-between">
           <Link href="/" className="flex items-center w-[80px]">
-            <div className="relative w-[80px] h-[24px] flex items-center">
+            <div className="relative w-[80px] h-[24px] flex items-center opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out">
               <Image
                 src="/brand/logo-light.svg"
                 alt="Norn Logo"
                 width={80}
                 height={24}
                 priority
-                className="absolute left-0 transition-opacity dark:opacity-0"
+                className="absolute left-0 transition-opacity duration-300 dark:opacity-0"
               />
               <Image
                 src="/brand/logo-dark.svg"
@@ -31,7 +31,7 @@ export function AppSidebar() {
                 width={80}
                 height={24}
                 priority
-                className="absolute left-0 transition-opacity opacity-0 dark:opacity-100"
+                className="absolute left-0 transition-opacity duration-300 opacity-0 dark:opacity-100"
               />
             </div>
           </Link>
