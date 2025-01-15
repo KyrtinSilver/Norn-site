@@ -20,6 +20,9 @@ export default function DemoPage() {
 
     const form = e.currentTarget
     const formData = new FormData(form)
+    formData.append('subject', 'Demo Request')
+    formData.append('from_name', 'Demo Request Form')
+    formData.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '')
     
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
@@ -49,20 +52,7 @@ export default function DemoPage() {
         await new Promise(resolve => setTimeout(resolve, 2000))
         router.push('/company/demo/?success=true')
       } else {
-        toast.error(result.message || "Failed to send request. Please try again.", {
-          className: "group",
-          style: {
-            backgroundColor: "hsl(var(--background))",
-            color: "hsl(var(--foreground))",
-            border: "1px solid hsl(var(--border))",
-          },
-          icon: (
-            <div className="text-destructive dark:text-destructive">
-              <AlertCircle className="h-4 w-4" />
-            </div>
-          ),
-          duration: 5000,
-        })
+        throw new Error(result.message || 'Failed to send request')
       }
     } catch (error) {
       toast.error("An error occurred. Please try again.", {
@@ -174,10 +164,6 @@ export default function DemoPage() {
                 onSubmit={handleSubmit}
                 className="space-y-8"
               >
-                <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY || ''} />
-                <input type="hidden" name="from_name" value="Demo Request Form" />
-                <input type="hidden" name="subject" value="New Demo Request" />
-                
                 <div className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-[500] mb-2">Name</label>

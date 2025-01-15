@@ -146,6 +146,25 @@ export default function CompanyPage() {
           </div>
         </Container>
       </section>
+
+      {/* Demo Request Section */}
+      <section className="py-24 bg-muted/50">
+        <Container>
+          <div className="max-w-[85rem] mx-auto text-center">
+            <div className="max-w-2xl mx-auto mb-12">
+              <h2 className="text-3xl font-medium tracking-tight mb-4">Experience Norn.ai</h2>
+              <p className="text-xl font-normal text-muted-foreground">
+                See the first AI system with independent motivation and emotional intelligence in action.
+              </p>
+            </div>
+            <Button asChild size="lg" className="min-w-[200px]">
+              <Link href="/company/demo">
+                Request Demo <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </Container>
+      </section>
     </div>
   )
 }

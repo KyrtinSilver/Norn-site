@@ -11,20 +11,21 @@ export default function Home() {
     <div className="py-8 space-y-24">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center -mt-20 pb-20">
-        <div className="container flex max-w-[64rem] flex-col items-center text-center gap-4">
-          <h1 className="text-4xl font-[500] leading-tight tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            Scalable Intelligence
+        <div className="container flex max-w-[64rem] flex-col items-start sm:items-center text-left sm:text-center gap-6">
+          <h1 className="text-[clamp(3.5rem,10vw+1rem,4.5rem)] font-[500] leading-[0.9] sm:leading-[1.1] tracking-tighter flex flex-col sm:block gap-4 sm:gap-0">
+            <span>Scalable</span>{' '}
+            <span>Intelligence</span>
           </h1>
-          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 font-[400]">
-            The Future is here, 20 years ahead of schedule.
+          <p className="text-[clamp(1.5rem,3vw+0.5rem,1.5rem)] leading-tight sm:leading-normal text-muted-foreground font-[400] max-w-[42rem]">
+            The future is here, 20 years ahead of schedule.
           </p>
-          <div className="flex gap-4">
-            <Button asChild size="lg">
+          <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-6 sm:gap-4 items-start sm:items-center">
+            <Button asChild size="lg" className="text-lg sm:text-base w-full sm:w-auto">
               <Link href="/features/product">
                 Learn More
               </Link>
             </Button>
-            <Button variant="outline" asChild size="lg">
+            <Button variant="outline" asChild size="lg" className="text-lg sm:text-base w-full sm:w-auto">
               <Link href="/company/demo">
                 Request Demo
               </Link>
@@ -267,7 +268,7 @@ export default function Home() {
       </section>
 
       {/* Partner With Us Section */}
-      <section className="border-t border-border">
+      <section className="bg-muted/50">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center gap-4 text-center pt-24 pb-16">
           <h2 className="font-[500] text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
             Partner With Us
