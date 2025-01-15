@@ -13,25 +13,21 @@ const nextConfig = {
   trailingSlash: true,
   transpilePackages: ["geist"],
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' 
-    ? (process.env.NEXT_PUBLIC_CUSTOM_DOMAIN ? '' : '/Norn-site')
-    : '',
-  assetPrefix: process.env.NODE_ENV === 'production'
-    ? (process.env.NEXT_PUBLIC_CUSTOM_DOMAIN ? '' : '/Norn-site')
-    : '',
+  distDir: 'docs',
+  basePath: process.env.NODE_ENV === 'production' ? '/Norn-site' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Norn-site/' : '',
   images: {
     unoptimized: true,
     path: process.env.NODE_ENV === 'production'
       ? (process.env.NEXT_PUBLIC_CUSTOM_DOMAIN ? '/_next/image' : '/Norn-site/_next/image')
       : '/_next/image',
   },
-  webpack: (config, { isServer }) => {
-    // Handle punycode deprecation
-    config.resolve.fallback = {
+  webpack: (config) => {
+    config.resolve.fallback = { 
       ...config.resolve.fallback,
-      punycode: false,
-    }
-    return config
+      "punycode": require.resolve("punycode/") 
+    };
+    return config;
   },
 }
 
