@@ -3,7 +3,7 @@
 import { Container } from "@/components/ui/container"
 import Image from "next/image"
 import Link from "next/link"
-import { Code2, Brain, Scale } from "lucide-react"
+import { Code2, Brain, Scale, Microscope } from "lucide-react"
 
 const TeamCard = ({ member, children }: { member: any, children: React.ReactNode }) => {
   if (member.linkedin) {
@@ -241,7 +241,7 @@ const nornTeam = [
       "Norn systems enable breakthroughs in new research domains and better integration of existing knowledge.",
       "Capabilities include conducting meta-analyses of prior research and advancing new scientific frontiers."
     ],
-    icon: Brain
+    icon: Microscope
   },
   {
     name: "Norn Type-P",
