@@ -126,11 +126,13 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <Button asChild size="lg" className="mt-8">
-                <Link href="/features">
-                  See How It Works <ChevronRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 w-full sm:w-auto">
+                <Button asChild size="lg" className="mt-8">
+                  <Link href="/features">
+                    See How It Works <ChevronRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden bg-muted">
               <Image
@@ -187,11 +189,13 @@ export default function Home() {
                   </Link>
                 ))}
               </div>
-              <Button asChild size="lg" className="mt-8">
-                <Link href="/research">
-                  View Research <ChevronRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 w-full sm:w-auto">
+                <Button asChild size="lg" className="mt-8">
+                  <Link href="/research">
+                    View Research <ChevronRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </Container>
@@ -212,12 +216,9 @@ export default function Home() {
             <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
             <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
             <div 
-              className="no-scrollbar flex overflow-x-auto pb-8 gap-6 px-[max(10vw,theme(spacing.8))]"
+              className="no-scrollbar flex overflow-x-auto overscroll-x-contain pb-8 gap-6 px-[max(10vw,theme(spacing.8))]"
               style={{ 
-                scrollBehavior: 'smooth',
-                overscrollBehavior: 'none',
-                scrollSnapType: 'none',
-                WebkitOverflowScrolling: 'touch'
+                scrollBehavior: 'smooth'
               }}
             >
               {timeline.map((event, index) => (
@@ -267,17 +268,21 @@ export default function Home() {
 
       {/* Partner With Us Section */}
       <section className="bg-muted/50">
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center gap-4 text-center pt-24 pb-16">
-          <h2 className="font-[500] text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            Partner With Us
-          </h2>
-          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 font-[400]">
-            Join us in shaping the future of artificial intelligence
-          </p>
-          <Button size="lg" asChild className="mt-4">
-            <Link href="/collaboration">Get in Touch</Link>
-          </Button>
-        </div>
+        <Container>
+          <div className="mx-auto flex max-w-[58rem] flex-col items-center gap-4 text-center pt-24 pb-16">
+            <h2 className="font-[500] text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+              Partner With Us
+            </h2>
+            <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 font-[400]">
+              Join us in shaping the future of artificial intelligence
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 w-full sm:w-auto">
+              <Button size="lg" asChild className="mt-4">
+                <Link href="/collaboration">Get in Touch</Link>
+              </Button>
+            </div>
+          </div>
+        </Container>
       </section>
     </div>
   )
