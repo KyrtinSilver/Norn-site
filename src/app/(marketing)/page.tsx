@@ -13,7 +13,7 @@ export default function Home() {
       <section className="min-h-screen flex items-center justify-center -mt-20 pb-20">
         <div className="container flex max-w-[64rem] flex-col items-center text-center gap-4">
           <h1 className="text-4xl font-[500] leading-tight tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            Scaling Intelligence
+            Scalable Intelligence
           </h1>
           <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 font-[400]">
             The Future is here, 20 years ahead of schedule.
@@ -21,12 +21,12 @@ export default function Home() {
           <div className="flex gap-4">
             <Button asChild size="lg">
               <Link href="/research">
-                Our Research
+                Learn More
               </Link>
             </Button>
             <Button variant="outline" asChild size="lg">
-              <Link href="/collaboration">
-                Partner With Us
+              <Link href="/company/contact">
+                Request Demo
               </Link>
             </Button>
           </div>

@@ -116,12 +116,6 @@ export function NavigationMenu() {
             >
               Company
             </Link>
-            <Link
-              href="/company/contact"
-              className="text-sm opacity-60 hover:opacity-100 transition-opacity"
-            >
-              Contact
-            </Link>
           </nav>
           <div className="flex items-center gap-4 md:ml-0 ml-auto">
             <Link
@@ -174,13 +168,6 @@ export function NavigationMenu() {
               onClick={() => setIsOpen(false)}
             >
               Company
-            </Link>
-            <Link 
-              href="/company/contact" 
-              className="w-full text-center py-4 text-2xl font-medium opacity-60 hover:opacity-100 transition-opacity"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
             </Link>
           </nav>
         </div>
