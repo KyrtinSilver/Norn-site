@@ -20,12 +20,12 @@ export default function Home() {
           </p>
           <div className="flex gap-4">
             <Button asChild size="lg">
-              <Link href="/research">
+              <Link href="/features/product">
                 Learn More
               </Link>
             </Button>
             <Button variant="outline" asChild size="lg">
-              <Link href="/company/contact">
+              <Link href="/company/demo">
                 Request Demo
               </Link>
             </Button>
@@ -128,7 +128,7 @@ export default function Home() {
                 ))}
               </div>
               <Button asChild size="lg" className="mt-8">
-                <Link href="/features/product">
+                <Link href="/features">
                   See How It Works <ChevronRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -288,25 +288,25 @@ const focusAreas = [
   {
     title: "Cognitive Systems",
     description: "Building advanced AI systems with human-like reasoning and understanding capabilities",
-    href: "/research/cognitive-systems",
+    href: "/features/product",
     icon: <Brain className="h-6 w-6 text-primary" />
   },
   {
     title: "Knowledge Integration",
     description: "Developing systems that can effectively integrate and leverage vast knowledge bases",
-    href: "/research/knowledge-integration",
+    href: "/features/product",
     icon: <Network className="h-6 w-6 text-primary" />
   },
   {
     title: "AI Safety",
     description: "Ensuring the development of safe and reliable AI systems through rigorous research",
-    href: "/research/ai-safety",
+    href: "/features/product",
     icon: <Shield className="h-6 w-6 text-primary" />
   },
   {
     title: "Industry Solutions",
     description: "Applying our technology to solve real-world challenges across various industries",
-    href: "/features/industries",
+    href: "/features/product",
     icon: <Sparkles className="h-6 w-6 text-primary" />
   }
 ]
