@@ -114,8 +114,8 @@ export default function ContactPage() {
                     <Mail className="w-5 h-5 mt-1 text-primary" />
                     <div>
                       <p className="font-[500]">Email</p>
-                      <a href="mailto:contact@norn.ai" className="text-muted-foreground hover:text-primary transition-colors">
-                        contact@norn.ai
+                      <a href="mailto:Admin@ArtificialGeneralIntelligenceInc.com" className="text-muted-foreground hover:text-primary transition-colors">
+                        Admin@ArtificialGeneralIntelligenceInc.com
                       </a>
                     </div>
                   </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                     <Globe className="w-5 h-5 mt-1 text-primary" />
                     <div>
                       <p className="font-[500]">Locations</p>
-                      <p className="text-muted-foreground">San Francisco • New York • London</p>
+                      <p className="text-muted-foreground">Netherlands • Vietnam • United States</p>
                     </div>
                   </div>
                 </div>
