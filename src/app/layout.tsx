@@ -29,7 +29,7 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="your-verification-code" />
       </head>
-      <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`${GeistSans.variable} ${GeistMono.variable} font-sans antialiased`}>
         <ThemeProvider>
           {children}
           <Toaster richColors position="bottom-right" />
