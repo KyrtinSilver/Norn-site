@@ -15,7 +15,8 @@ export default function Home() {
           Scalable{'\n'}Intelligence
         </h1>
         <p className="text-[clamp(1.75rem,2vw+0.75rem,1.5rem)] leading-[1.4] text-muted-foreground/90 font-[400] mt-8">
-          <span className="whitespace-pre-wrap sm:whitespace-normal">The future is here, 20&nbsp;years{'\n'}ahead of schedule.</span>
+          <span className="block sm:inline">The future is here, 20 years</span>
+          <span className="block sm:inline">ahead of schedule.</span>
         </p>
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 mt-8 w-full sm:w-auto">
           <Button asChild size="lg" className="text-lg sm:text-base w-full sm:w-auto">
