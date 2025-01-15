@@ -93,22 +93,16 @@ export function NavigationMenu() {
           </Link>
           <nav className="hidden md:flex flex-1 items-center justify-center space-x-8">
             <Link
-              href="/company"
+              href="/features/industries"
               className="text-sm opacity-60 hover:opacity-100 transition-opacity"
             >
-              About
+              Industries
             </Link>
             <Link
               href="/features"
               className="text-sm opacity-60 hover:opacity-100 transition-opacity"
             >
               Features
-            </Link>
-            <Link
-              href="/features/industries"
-              className="text-sm opacity-60 hover:opacity-100 transition-opacity"
-            >
-              Industries
             </Link>
             <Link
               href="/research"
@@ -121,6 +115,12 @@ export function NavigationMenu() {
               className="text-sm opacity-60 hover:opacity-100 transition-opacity"
             >
               Company
+            </Link>
+            <Link
+              href="/company/contact"
+              className="text-sm opacity-60 hover:opacity-100 transition-opacity"
+            >
+              Contact
             </Link>
           </nav>
           <div className="flex items-center gap-4 md:ml-0 ml-auto">
@@ -148,11 +148,11 @@ export function NavigationMenu() {
         <div className="fixed inset-0 top-[var(--header-height)] z-40 bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
           <nav className="flex flex-col items-center justify-center h-full py-8">
             <Link 
-              href="/company" 
+              href="/features/industries" 
               className="w-full text-center py-4 text-2xl font-medium opacity-60 hover:opacity-100 transition-opacity"
               onClick={() => setIsOpen(false)}
             >
-              About
+              Industries
             </Link>
             <Link 
               href="/features" 
@@ -160,13 +160,6 @@ export function NavigationMenu() {
               onClick={() => setIsOpen(false)}
             >
               Features
-            </Link>
-            <Link 
-              href="/features/industries" 
-              className="w-full text-center py-4 text-2xl font-medium opacity-60 hover:opacity-100 transition-opacity"
-              onClick={() => setIsOpen(false)}
-            >
-              Industries
             </Link>
             <Link 
               href="/research" 
@@ -181,6 +174,13 @@ export function NavigationMenu() {
               onClick={() => setIsOpen(false)}
             >
               Company
+            </Link>
+            <Link 
+              href="/company/contact" 
+              className="w-full text-center py-4 text-2xl font-medium opacity-60 hover:opacity-100 transition-opacity"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
             </Link>
           </nav>
         </div>

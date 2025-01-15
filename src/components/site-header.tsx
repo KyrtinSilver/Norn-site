@@ -38,9 +38,35 @@ export function SiteHeader() {
               className="hidden dark:block"
             />
           </Link>
-          <Link href="/docs" className={navigationMenuTriggerStyle()}>
-            Docs
-          </Link>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <Link href="/features" className={navigationMenuTriggerStyle()}>
+                  Features
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/features/industries" className={navigationMenuTriggerStyle()}>
+                  Industries
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/research" className={navigationMenuTriggerStyle()}>
+                  Research
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/company/team" className={navigationMenuTriggerStyle()}>
+                  Team
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/company/contact" className={navigationMenuTriggerStyle()}>
+                  Contact
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
         <div className="flex-1 flex justify-end">
           <ModeToggle />
