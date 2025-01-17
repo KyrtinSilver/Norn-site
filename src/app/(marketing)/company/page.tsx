@@ -85,7 +85,7 @@ export default function CompanyPage() {
                   <Briefcase className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-[500] mb-3 group-hover:text-primary transition-colors">Careers</h3>
-                <p className="text-muted-foreground font-[400] mb-6">Join us in building the future of artificial intelligence.</p>
+                <p className="text-muted-foreground font-[400] mb-6">Join us in building the future of artificial intelligence. Coming soon.</p>
                 <div className="flex items-center text-sm text-primary font-[500]">
                   Learn more <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>
