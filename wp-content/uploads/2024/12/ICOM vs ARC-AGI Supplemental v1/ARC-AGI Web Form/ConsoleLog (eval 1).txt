@@ -1,0 +1,891 @@
+AGI Laboratory CMD tool. v 1.1
+agi: arctestb
+Files in the folder:
+loading: C:\ARC-AGI-master\data\evaluation\00576224.json
+ - Count: 1 | S:1 | F: 0
+loading: C:\ARC-AGI-master\data\evaluation\009d5c81.json
+ - Count: 2 | S:2 | F: 0
+loading: C:\ARC-AGI-master\data\evaluation\00dbd492.json
+ - Count: 3 | S:3 | F: 0
+loading: C:\ARC-AGI-master\data\evaluation\03560426.json
+ - Count: 4 | S:4 | F: 0
+loading: C:\ARC-AGI-master\data\evaluation\05a7bcf2.json
+Error: A task was canceled.
+ - Count: 4 | S:4 | F: 1
+loading: C:\ARC-AGI-master\data\evaluation\0607ce86.json
+Error: A task was canceled.
+ - Count: 4 | S:4 | F: 2
+loading: C:\ARC-AGI-master\data\evaluation\0692e18c.json
+ - Count: 5 | S:5 | F: 2
+loading: C:\ARC-AGI-master\data\evaluation\070dd51e.json
+ - Count: 6 | S:5 | F: 3
+loading: C:\ARC-AGI-master\data\evaluation\08573cc6.json
+ - Count: 7 | S:6 | F: 3
+loading: C:\ARC-AGI-master\data\evaluation\0934a4d8.json
+ - Count: 8 | S:6 | F: 4
+loading: C:\ARC-AGI-master\data\evaluation\09c534e7.json
+Error: A task was canceled.
+ - Count: 8 | S:6 | F: 5
+loading: C:\ARC-AGI-master\data\evaluation\0a1d4ef5.json
+ - Count: 9 | S:7 | F: 5
+loading: C:\ARC-AGI-master\data\evaluation\0a2355a6.json
+ - Count: 10 | S:8 | F: 5
+loading: C:\ARC-AGI-master\data\evaluation\0b17323b.json
+ - Count: 11 | S:9 | F: 5
+loading: C:\ARC-AGI-master\data\evaluation\0bb8deee.json
+ - Count: 12 | S:10 | F: 5
+loading: C:\ARC-AGI-master\data\evaluation\0becf7df.json
+ - Count: 13 | S:11 | F: 5
+loading: C:\ARC-AGI-master\data\evaluation\0c786b71.json
+ - Count: 14 | S:12 | F: 5
+loading: C:\ARC-AGI-master\data\evaluation\0c9aba6e.json
+ - Count: 15 | S:13 | F: 5
+loading: C:\ARC-AGI-master\data\evaluation\0d87d2a6.json
+Error: A task was canceled.
+ - Count: 15 | S:13 | F: 6
+loading: C:\ARC-AGI-master\data\evaluation\0e671a1a.json
+ - Count: 16 | S:14 | F: 6
+loading: C:\ARC-AGI-master\data\evaluation\0f63c0b9.json
+ - Count: 17 | S:15 | F: 6
+loading: C:\ARC-AGI-master\data\evaluation\103eff5b.json
+ - Count: 18 | S:16 | F: 6
+loading: C:\ARC-AGI-master\data\evaluation\11e1fe23.json
+ - Count: 19 | S:17 | F: 6
+loading: C:\ARC-AGI-master\data\evaluation\12422b43.json
+ - Count: 20 | S:18 | F: 6
+loading: C:\ARC-AGI-master\data\evaluation\12997ef3.json
+Error: Invalid property identifier character: [. Path 'output', line 1, position 90.
+ - Count: 21 | S:18 | F: 7
+loading: C:\ARC-AGI-master\data\evaluation\12eac192.json
+ - Count: 22 | S:19 | F: 7
+loading: C:\ARC-AGI-master\data\evaluation\136b0064.json
+ - Count: 23 | S:20 | F: 7
+loading: C:\ARC-AGI-master\data\evaluation\13713586.json
+ - Count: 24 | S:21 | F: 7
+loading: C:\ARC-AGI-master\data\evaluation\137f0df0.json
+ - Count: 25 | S:22 | F: 7
+loading: C:\ARC-AGI-master\data\evaluation\140c817e.json
+ - Count: 26 | S:23 | F: 7
+loading: C:\ARC-AGI-master\data\evaluation\14754a24.json
+ - Count: 27 | S:24 | F: 7
+loading: C:\ARC-AGI-master\data\evaluation\15113be4.json
+ - Count: 28 | S:25 | F: 7
+loading: C:\ARC-AGI-master\data\evaluation\15663ba9.json
+ - Count: 29 | S:26 | F: 7
+loading: C:\ARC-AGI-master\data\evaluation\15696249.json
+ - Count: 30 | S:27 | F: 7
+loading: C:\ARC-AGI-master\data\evaluation\16b78196.json
+ - Count: 31 | S:27 | F: 8
+loading: C:\ARC-AGI-master\data\evaluation\17b80ad2.json
+ - Count: 32 | S:28 | F: 8
+loading: C:\ARC-AGI-master\data\evaluation\17cae0c1.json
+ - Count: 33 | S:29 | F: 8
+loading: C:\ARC-AGI-master\data\evaluation\18419cfa.json
+Error: A task was canceled.
+ - Count: 33 | S:29 | F: 9
+loading: C:\ARC-AGI-master\data\evaluation\184a9768.json
+Error: A task was canceled.
+ - Count: 33 | S:29 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\195ba7dc.json
+ - Count: 34 | S:30 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1990f7a8.json
+ - Count: 35 | S:31 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\19bb5feb.json
+ - Count: 36 | S:32 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1a2e2828.json
+ - Count: 37 | S:33 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1a6449f1.json
+ - Count: 38 | S:34 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1acc24af.json
+ - Count: 39 | S:35 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1c02dbbe.json
+ - Count: 40 | S:36 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1c0d0a4b.json
+ - Count: 41 | S:37 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1c56ad9f.json
+ - Count: 42 | S:38 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1d0a4b61.json
+ - Count: 43 | S:39 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1d398264.json
+ - Count: 44 | S:40 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1da012fc.json
+ - Count: 45 | S:41 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1e81d6f9.json
+ - Count: 46 | S:42 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\1e97544e.json
+ - Count: 47 | S:43 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\2037f2c7.json
+ - Count: 48 | S:44 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\2072aba6.json
+ - Count: 49 | S:45 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\20818e16.json
+ - Count: 50 | S:46 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\20981f0e.json
+ - Count: 51 | S:47 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\212895b5.json
+ - Count: 52 | S:48 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\21f83797.json
+ - Count: 53 | S:49 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\22a4bbc2.json
+ - Count: 54 | S:50 | F: 10
+loading: C:\ARC-AGI-master\data\evaluation\25094a63.json
+ - Count: 55 | S:50 | F: 11
+loading: C:\ARC-AGI-master\data\evaluation\2546ccf6.json
+ - Count: 56 | S:51 | F: 11
+loading: C:\ARC-AGI-master\data\evaluation\256b0a75.json
+Error: A task was canceled.
+ - Count: 56 | S:51 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\2685904e.json
+ - Count: 57 | S:52 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\2697da3f.json
+ - Count: 58 | S:53 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\2753e76c.json
+ - Count: 59 | S:54 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\27a77e38.json
+ - Count: 60 | S:55 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\27f8ce4f.json
+ - Count: 61 | S:56 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\281123b4.json
+ - Count: 62 | S:57 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\292dd178.json
+ - Count: 63 | S:58 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\29700607.json
+ - Count: 64 | S:59 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\2a5f8217.json
+ - Count: 65 | S:60 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\2b01abd0.json
+ - Count: 66 | S:61 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\2c0b0aff.json
+ - Count: 67 | S:62 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\2c737e39.json
+ - Count: 68 | S:63 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\2f0c5170.json
+ - Count: 69 | S:64 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\310f3251.json
+ - Count: 70 | S:65 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\3194b014.json
+ - Count: 71 | S:66 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\319f2597.json
+ - Count: 72 | S:67 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\31adaf00.json
+ - Count: 73 | S:68 | F: 12
+loading: C:\ARC-AGI-master\data\evaluation\31d5ba1a.json
+Error: Invalid property identifier character: [. Path 'output', line 1, position 48.
+ - Count: 74 | S:68 | F: 13
+loading: C:\ARC-AGI-master\data\evaluation\32e9702f.json
+ - Count: 75 | S:69 | F: 13
+loading: C:\ARC-AGI-master\data\evaluation\332efdb3.json
+ - Count: 76 | S:70 | F: 13
+loading: C:\ARC-AGI-master\data\evaluation\3391f8c0.json
+ - Count: 77 | S:71 | F: 13
+loading: C:\ARC-AGI-master\data\evaluation\33b52de3.json
+Error: A task was canceled.
+ - Count: 77 | S:71 | F: 14
+loading: C:\ARC-AGI-master\data\evaluation\3490cc26.json
+Error: A task was canceled.
+ - Count: 77 | S:71 | F: 15
+loading: C:\ARC-AGI-master\data\evaluation\34b99a2b.json
+ - Count: 78 | S:72 | F: 15
+loading: C:\ARC-AGI-master\data\evaluation\351d6448.json
+ - Count: 79 | S:73 | F: 15
+loading: C:\ARC-AGI-master\data\evaluation\358ba94e.json
+ - Count: 80 | S:74 | F: 15
+loading: C:\ARC-AGI-master\data\evaluation\37d3e8b2.json
+ - Count: 81 | S:75 | F: 15
+loading: C:\ARC-AGI-master\data\evaluation\3979b1a8.json
+ - Count: 82 | S:76 | F: 15
+loading: C:\ARC-AGI-master\data\evaluation\3a301edc.json
+ - Count: 83 | S:77 | F: 15
+loading: C:\ARC-AGI-master\data\evaluation\3b4c2228.json
+ - Count: 84 | S:78 | F: 15
+loading: C:\ARC-AGI-master\data\evaluation\3d31c5b3.json
+ - Count: 85 | S:78 | F: 16
+loading: C:\ARC-AGI-master\data\evaluation\3ed85e70.json
+ - Count: 86 | S:79 | F: 16
+loading: C:\ARC-AGI-master\data\evaluation\3ee1011a.json
+ - Count: 87 | S:80 | F: 16
+loading: C:\ARC-AGI-master\data\evaluation\3f23242b.json
+ - Count: 88 | S:81 | F: 16
+loading: C:\ARC-AGI-master\data\evaluation\40f6cd08.json
+Error: A task was canceled.
+ - Count: 88 | S:81 | F: 17
+loading: C:\ARC-AGI-master\data\evaluation\414297c0.json
+ - Count: 89 | S:82 | F: 17
+loading: C:\ARC-AGI-master\data\evaluation\423a55dc.json
+ - Count: 90 | S:83 | F: 17
+loading: C:\ARC-AGI-master\data\evaluation\42918530.json
+Error: A task was canceled.
+ - Count: 90 | S:83 | F: 18
+loading: C:\ARC-AGI-master\data\evaluation\42a15761.json
+ - Count: 91 | S:84 | F: 18
+loading: C:\ARC-AGI-master\data\evaluation\4364c1c4.json
+ - Count: 92 | S:85 | F: 18
+loading: C:\ARC-AGI-master\data\evaluation\456873bc.json
+ - Count: 93 | S:85 | F: 19
+loading: C:\ARC-AGI-master\data\evaluation\45737921.json
+ - Count: 94 | S:86 | F: 19
+loading: C:\ARC-AGI-master\data\evaluation\45bbe264.json
+ - Count: 95 | S:87 | F: 19
+loading: C:\ARC-AGI-master\data\evaluation\477d2879.json
+ - Count: 96 | S:88 | F: 19
+loading: C:\ARC-AGI-master\data\evaluation\47996f11.json
+Error: A task was canceled.
+ - Count: 96 | S:88 | F: 20
+loading: C:\ARC-AGI-master\data\evaluation\48131b3c.json
+ - Count: 97 | S:89 | F: 20
+loading: C:\ARC-AGI-master\data\evaluation\4852f2fa.json
+Error: Invalid property identifier character: [. Path 'output', line 1, position 55.
+ - Count: 98 | S:89 | F: 21
+loading: C:\ARC-AGI-master\data\evaluation\48f8583b.json
+ - Count: 99 | S:90 | F: 21
+loading: C:\ARC-AGI-master\data\evaluation\4aab4007.json
+ - Count: 100 | S:91 | F: 21
+loading: C:\ARC-AGI-master\data\evaluation\4acc7107.json
+ - Count: 101 | S:92 | F: 21
+loading: C:\ARC-AGI-master\data\evaluation\4b6b68e5.json
+Error: A task was canceled.
+ - Count: 101 | S:92 | F: 22
+loading: C:\ARC-AGI-master\data\evaluation\4c177718.json
+Error: Invalid property identifier character: [. Path 'output', line 1, position 300.
+ - Count: 102 | S:92 | F: 23
+loading: C:\ARC-AGI-master\data\evaluation\4cd1b7b2.json
+ - Count: 103 | S:93 | F: 23
+loading: C:\ARC-AGI-master\data\evaluation\4e45f183.json
+ - Count: 104 | S:94 | F: 23
+loading: C:\ARC-AGI-master\data\evaluation\4e469f39.json
+ - Count: 105 | S:95 | F: 23
+loading: C:\ARC-AGI-master\data\evaluation\4f537728.json
+ - Count: 106 | S:96 | F: 23
+loading: C:\ARC-AGI-master\data\evaluation\4ff4c9da.json
+Error: A task was canceled.
+ - Count: 106 | S:96 | F: 24
+loading: C:\ARC-AGI-master\data\evaluation\505fff84.json
+ - Count: 107 | S:97 | F: 24
+loading: C:\ARC-AGI-master\data\evaluation\506d28a5.json
+ - Count: 108 | S:98 | F: 24
+loading: C:\ARC-AGI-master\data\evaluation\50a16a69.json
+ - Count: 109 | S:99 | F: 24
+loading: C:\ARC-AGI-master\data\evaluation\50aad11f.json
+ - Count: 110 | S:100 | F: 24
+loading: C:\ARC-AGI-master\data\evaluation\50f325b5.json
+ - Count: 111 | S:101 | F: 24
+loading: C:\ARC-AGI-master\data\evaluation\516b51b7.json
+ - Count: 112 | S:102 | F: 24
+loading: C:\ARC-AGI-master\data\evaluation\5207a7b5.json
+ - Count: 113 | S:103 | F: 24
+loading: C:\ARC-AGI-master\data\evaluation\5289ad53.json
+ - Count: 114 | S:104 | F: 24
+loading: C:\ARC-AGI-master\data\evaluation\52fd389e.json
+ - Count: 115 | S:104 | F: 25
+loading: C:\ARC-AGI-master\data\evaluation\54db823b.json
+ - Count: 116 | S:105 | F: 25
+loading: C:\ARC-AGI-master\data\evaluation\55059096.json
+ - Count: 117 | S:106 | F: 25
+loading: C:\ARC-AGI-master\data\evaluation\551d5bf1.json
+ - Count: 118 | S:107 | F: 25
+loading: C:\ARC-AGI-master\data\evaluation\55783887.json
+ - Count: 119 | S:108 | F: 25
+loading: C:\ARC-AGI-master\data\evaluation\575b1a71.json
+ - Count: 120 | S:109 | F: 25
+loading: C:\ARC-AGI-master\data\evaluation\5783df64.json
+ - Count: 121 | S:110 | F: 25
+loading: C:\ARC-AGI-master\data\evaluation\5833af48.json
+ - Count: 122 | S:111 | F: 25
+loading: C:\ARC-AGI-master\data\evaluation\58743b76.json
+ - Count: 123 | S:112 | F: 25
+loading: C:\ARC-AGI-master\data\evaluation\58e15b12.json
+ - Count: 124 | S:112 | F: 26
+loading: C:\ARC-AGI-master\data\evaluation\59341089.json
+ - Count: 125 | S:113 | F: 26
+loading: C:\ARC-AGI-master\data\evaluation\5a5a2103.json
+Error: A task was canceled.
+ - Count: 125 | S:113 | F: 27
+loading: C:\ARC-AGI-master\data\evaluation\5af49b42.json
+ - Count: 126 | S:114 | F: 27
+loading: C:\ARC-AGI-master\data\evaluation\5b526a93.json
+ - Count: 127 | S:115 | F: 27
+loading: C:\ARC-AGI-master\data\evaluation\5b692c0f.json
+Error: A task was canceled.
+ - Count: 127 | S:115 | F: 28
+loading: C:\ARC-AGI-master\data\evaluation\5b6cbef5.json
+ - Count: 128 | S:116 | F: 28
+loading: C:\ARC-AGI-master\data\evaluation\5d2a5c43.json
+Error: Invalid property identifier character: [. Path 'output', line 1, position 73.
+ - Count: 129 | S:116 | F: 29
+loading: C:\ARC-AGI-master\data\evaluation\5ffb2104.json
+ - Count: 130 | S:117 | F: 29
+loading: C:\ARC-AGI-master\data\evaluation\604001fa.json
+ - Count: 131 | S:118 | F: 29
+loading: C:\ARC-AGI-master\data\evaluation\60a26a3e.json
+ - Count: 132 | S:119 | F: 29
+loading: C:\ARC-AGI-master\data\evaluation\60c09cac.json
+ - Count: 133 | S:120 | F: 29
+loading: C:\ARC-AGI-master\data\evaluation\626c0bcc.json
+ - Count: 134 | S:121 | F: 29
+loading: C:\ARC-AGI-master\data\evaluation\62ab2642.json
+ - Count: 135 | S:121 | F: 30
+loading: C:\ARC-AGI-master\data\evaluation\62b74c02.json
+ - Count: 136 | S:122 | F: 30
+loading: C:\ARC-AGI-master\data\evaluation\639f5a19.json
+Error: A task was canceled.
+ - Count: 136 | S:122 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\642248e4.json
+ - Count: 137 | S:123 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\642d658d.json
+ - Count: 138 | S:124 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\64a7c07e.json
+ - Count: 139 | S:125 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\66e6c45b.json
+ - Count: 140 | S:126 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\66f2d22f.json
+ - Count: 141 | S:127 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\67636eac.json
+ - Count: 142 | S:128 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\67b4a34d.json
+ - Count: 143 | S:129 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\67c52801.json
+ - Count: 144 | S:130 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\68b67ca3.json
+ - Count: 145 | S:131 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\692cd3b6.json
+ - Count: 146 | S:132 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\695367ec.json
+ - Count: 147 | S:133 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\696d4842.json
+ - Count: 148 | S:134 | F: 31
+loading: C:\ARC-AGI-master\data\evaluation\69889d6e.json
+ - Count: 149 | S:134 | F: 32
+loading: C:\ARC-AGI-master\data\evaluation\6a11f6da.json
+ - Count: 150 | S:135 | F: 32
+loading: C:\ARC-AGI-master\data\evaluation\6ad5bdfd.json
+ - Count: 151 | S:136 | F: 32
+loading: C:\ARC-AGI-master\data\evaluation\6df30ad6.json
+ - Count: 152 | S:137 | F: 32
+loading: C:\ARC-AGI-master\data\evaluation\6ea4a07e.json
+ - Count: 153 | S:138 | F: 32
+loading: C:\ARC-AGI-master\data\evaluation\6f473927.json
+ - Count: 154 | S:139 | F: 32
+loading: C:\ARC-AGI-master\data\evaluation\7039b2d7.json
+ - Count: 155 | S:139 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\705a3229.json
+ - Count: 156 | S:140 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\712bf12e.json
+ - Count: 157 | S:141 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\72207abc.json
+ - Count: 158 | S:142 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\72a961c9.json
+ - Count: 159 | S:143 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\73182012.json
+ - Count: 160 | S:144 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\73c3b0d8.json
+ - Count: 161 | S:145 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\73ccf9c2.json
+ - Count: 162 | S:146 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\759f3fd3.json
+ - Count: 163 | S:147 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\762cd429.json
+ - Count: 164 | S:148 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\770cc55f.json
+ - Count: 165 | S:149 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\782b5218.json
+ - Count: 166 | S:150 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\79369cc6.json
+ - Count: 167 | S:151 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\7953d61e.json
+ - Count: 168 | S:152 | F: 33
+loading: C:\ARC-AGI-master\data\evaluation\79fb03f4.json
+ - Count: 169 | S:152 | F: 34
+loading: C:\ARC-AGI-master\data\evaluation\7bb29440.json
+ - Count: 170 | S:153 | F: 34
+loading: C:\ARC-AGI-master\data\evaluation\7c8af763.json
+ - Count: 171 | S:154 | F: 34
+loading: C:\ARC-AGI-master\data\evaluation\7c9b52a0.json
+ - Count: 172 | S:155 | F: 34
+loading: C:\ARC-AGI-master\data\evaluation\7d18a6fb.json
+ - Count: 173 | S:156 | F: 34
+loading: C:\ARC-AGI-master\data\evaluation\7d1f7ee8.json
+Error: A task was canceled.
+ - Count: 173 | S:156 | F: 35
+loading: C:\ARC-AGI-master\data\evaluation\7d419a02.json
+ - Count: 174 | S:157 | F: 35
+loading: C:\ARC-AGI-master\data\evaluation\7e02026e.json
+ - Count: 175 | S:158 | F: 35
+loading: C:\ARC-AGI-master\data\evaluation\7ee1c6ea.json
+ - Count: 176 | S:159 | F: 35
+loading: C:\ARC-AGI-master\data\evaluation\817e6c09.json
+ - Count: 177 | S:160 | F: 35
+loading: C:\ARC-AGI-master\data\evaluation\81c0276b.json
+ - Count: 178 | S:161 | F: 35
+loading: C:\ARC-AGI-master\data\evaluation\833dafe3.json
+ - Count: 179 | S:162 | F: 35
+loading: C:\ARC-AGI-master\data\evaluation\845d6e51.json
+Error: A task was canceled.
+ - Count: 179 | S:162 | F: 36
+loading: C:\ARC-AGI-master\data\evaluation\84db8fc4.json
+ - Count: 180 | S:163 | F: 36
+loading: C:\ARC-AGI-master\data\evaluation\84f2aca1.json
+ - Count: 181 | S:164 | F: 36
+loading: C:\ARC-AGI-master\data\evaluation\8597cfd7.json
+ - Count: 182 | S:165 | F: 36
+loading: C:\ARC-AGI-master\data\evaluation\85b81ff1.json
+ - Count: 183 | S:166 | F: 36
+loading: C:\ARC-AGI-master\data\evaluation\85fa5666.json
+ - Count: 184 | S:167 | F: 36
+loading: C:\ARC-AGI-master\data\evaluation\8719f442.json
+ - Count: 185 | S:168 | F: 36
+loading: C:\ARC-AGI-master\data\evaluation\88207623.json
+ - Count: 186 | S:169 | F: 36
+loading: C:\ARC-AGI-master\data\evaluation\891232d6.json
+Error: A task was canceled.
+ - Count: 186 | S:169 | F: 37
+loading: C:\ARC-AGI-master\data\evaluation\896d5239.json
+ - Count: 187 | S:170 | F: 37
+loading: C:\ARC-AGI-master\data\evaluation\8a371977.json
+ - Count: 188 | S:171 | F: 37
+loading: C:\ARC-AGI-master\data\evaluation\8b28cd80.json
+Error: Invalid property identifier character: [. Path 'output', line 1, position 193.
+ - Count: 189 | S:171 | F: 38
+loading: C:\ARC-AGI-master\data\evaluation\8ba14f53.json
+ - Count: 190 | S:172 | F: 38
+loading: C:\ARC-AGI-master\data\evaluation\8cb8642d.json
+Error: A task was canceled.
+ - Count: 190 | S:172 | F: 39
+loading: C:\ARC-AGI-master\data\evaluation\8dae5dfc.json
+ - Count: 191 | S:172 | F: 40
+loading: C:\ARC-AGI-master\data\evaluation\8e2edd66.json
+ - Count: 192 | S:173 | F: 40
+loading: C:\ARC-AGI-master\data\evaluation\8ee62060.json
+ - Count: 193 | S:174 | F: 40
+loading: C:\ARC-AGI-master\data\evaluation\8fbca751.json
+ - Count: 194 | S:175 | F: 40
+loading: C:\ARC-AGI-master\data\evaluation\90347967.json
+ - Count: 195 | S:175 | F: 41
+loading: C:\ARC-AGI-master\data\evaluation\903d1b4a.json
+ - Count: 196 | S:176 | F: 41
+loading: C:\ARC-AGI-master\data\evaluation\9110e3c5.json
+ - Count: 197 | S:177 | F: 41
+loading: C:\ARC-AGI-master\data\evaluation\917bccba.json
+ - Count: 198 | S:178 | F: 41
+loading: C:\ARC-AGI-master\data\evaluation\929ab4e9.json
+Error: A task was canceled.
+ - Count: 198 | S:178 | F: 42
+loading: C:\ARC-AGI-master\data\evaluation\92e50de0.json
+Error: A task was canceled.
+ - Count: 198 | S:178 | F: 43
+loading: C:\ARC-AGI-master\data\evaluation\9356391f.json
+ - Count: 199 | S:179 | F: 43
+loading: C:\ARC-AGI-master\data\evaluation\93b4f4b3.json
+ - Count: 200 | S:180 | F: 43
+loading: C:\ARC-AGI-master\data\evaluation\93c31fbe.json
+Error: A task was canceled.
+ - Count: 200 | S:180 | F: 44
+loading: C:\ARC-AGI-master\data\evaluation\94133066.json
+ - Count: 201 | S:181 | F: 44
+loading: C:\ARC-AGI-master\data\evaluation\94414823.json
+ - Count: 202 | S:182 | F: 44
+loading: C:\ARC-AGI-master\data\evaluation\94be5b80.json
+ - Count: 203 | S:183 | F: 44
+loading: C:\ARC-AGI-master\data\evaluation\95a58926.json
+Error: A task was canceled.
+ - Count: 203 | S:183 | F: 45
+loading: C:\ARC-AGI-master\data\evaluation\963f59bc.json
+ - Count: 204 | S:183 | F: 46
+loading: C:\ARC-AGI-master\data\evaluation\96a8c0cd.json
+ - Count: 205 | S:184 | F: 46
+loading: C:\ARC-AGI-master\data\evaluation\97239e3d.json
+ - Count: 206 | S:185 | F: 46
+loading: C:\ARC-AGI-master\data\evaluation\9772c176.json
+ - Count: 207 | S:186 | F: 46
+loading: C:\ARC-AGI-master\data\evaluation\981571dc.json
+Error: A task was canceled.
+ - Count: 207 | S:186 | F: 47
+loading: C:\ARC-AGI-master\data\evaluation\992798f6.json
+ - Count: 208 | S:186 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\99306f82.json
+ - Count: 209 | S:187 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9a4bb226.json
+ - Count: 210 | S:188 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9b2a60aa.json
+ - Count: 211 | S:189 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9b365c51.json
+ - Count: 212 | S:190 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9b4c17c4.json
+ - Count: 213 | S:191 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9bebae7a.json
+ - Count: 214 | S:192 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9c1e755f.json
+ - Count: 215 | S:193 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9c56f360.json
+ - Count: 216 | S:194 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9caba7c3.json
+ - Count: 217 | S:195 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9ddd00f0.json
+ - Count: 218 | S:196 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9def23fe.json
+ - Count: 219 | S:197 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\9f27f097.json
+ - Count: 220 | S:198 | F: 48
+loading: C:\ARC-AGI-master\data\evaluation\a04b2602.json
+ - Count: 221 | S:198 | F: 49
+loading: C:\ARC-AGI-master\data\evaluation\a096bf4d.json
+Error: A task was canceled.
+ - Count: 221 | S:198 | F: 50
+loading: C:\ARC-AGI-master\data\evaluation\a3f84088.json
+Error: A task was canceled.
+ - Count: 221 | S:198 | F: 51
+loading: C:\ARC-AGI-master\data\evaluation\a406ac07.json
+ - Count: 222 | S:199 | F: 51
+loading: C:\ARC-AGI-master\data\evaluation\a57f2f04.json
+Error: A task was canceled.
+ - Count: 222 | S:199 | F: 52
+loading: C:\ARC-AGI-master\data\evaluation\a59b95c0.json
+ - Count: 223 | S:200 | F: 52
+loading: C:\ARC-AGI-master\data\evaluation\a680ac02.json
+ - Count: 224 | S:201 | F: 52
+loading: C:\ARC-AGI-master\data\evaluation\a8610ef7.json
+ - Count: 225 | S:202 | F: 52
+loading: C:\ARC-AGI-master\data\evaluation\a934301b.json
+ - Count: 226 | S:203 | F: 52
+loading: C:\ARC-AGI-master\data\evaluation\aa18de87.json
+ - Count: 227 | S:204 | F: 52
+loading: C:\ARC-AGI-master\data\evaluation\aa300dc3.json
+ - Count: 228 | S:205 | F: 52
+loading: C:\ARC-AGI-master\data\evaluation\aa4ec2a5.json
+Error: A task was canceled.
+ - Count: 228 | S:205 | F: 53
+loading: C:\ARC-AGI-master\data\evaluation\aab50785.json
+ - Count: 229 | S:206 | F: 53
+loading: C:\ARC-AGI-master\data\evaluation\ac0c5833.json
+Error: A task was canceled.
+ - Count: 229 | S:206 | F: 54
+loading: C:\ARC-AGI-master\data\evaluation\ac2e8ecf.json
+ - Count: 230 | S:207 | F: 54
+loading: C:\ARC-AGI-master\data\evaluation\ac3e2b04.json
+Error: A task was canceled.
+ - Count: 230 | S:207 | F: 55
+loading: C:\ARC-AGI-master\data\evaluation\ac605cbb.json
+ - Count: 231 | S:208 | F: 55
+loading: C:\ARC-AGI-master\data\evaluation\ad7e01d0.json
+Error: A task was canceled.
+ - Count: 231 | S:208 | F: 56
+loading: C:\ARC-AGI-master\data\evaluation\ae58858e.json
+ - Count: 232 | S:209 | F: 56
+loading: C:\ARC-AGI-master\data\evaluation\aee291af.json
+ - Count: 233 | S:210 | F: 56
+loading: C:\ARC-AGI-master\data\evaluation\af22c60d.json
+Error: A task was canceled.
+ - Count: 233 | S:210 | F: 57
+loading: C:\ARC-AGI-master\data\evaluation\af24b4cc.json
+ - Count: 234 | S:211 | F: 57
+loading: C:\ARC-AGI-master\data\evaluation\b0722778.json
+ - Count: 235 | S:212 | F: 57
+loading: C:\ARC-AGI-master\data\evaluation\b0f4d537.json
+ - Count: 236 | S:213 | F: 57
+loading: C:\ARC-AGI-master\data\evaluation\b15fca0b.json
+ - Count: 237 | S:214 | F: 57
+loading: C:\ARC-AGI-master\data\evaluation\b1fc8b8e.json
+ - Count: 238 | S:215 | F: 57
+loading: C:\ARC-AGI-master\data\evaluation\b20f7c8b.json
+Error: A task was canceled.
+ - Count: 238 | S:215 | F: 58
+loading: C:\ARC-AGI-master\data\evaluation\b457fec5.json
+Error: A task was canceled.
+ - Count: 238 | S:215 | F: 59
+loading: C:\ARC-AGI-master\data\evaluation\b4a43f3b.json
+ - Count: 239 | S:216 | F: 59
+loading: C:\ARC-AGI-master\data\evaluation\b7999b51.json
+ - Count: 240 | S:217 | F: 59
+loading: C:\ARC-AGI-master\data\evaluation\b7cb93ac.json
+ - Count: 241 | S:218 | F: 59
+loading: C:\ARC-AGI-master\data\evaluation\b7f8a4d8.json
+ - Count: 242 | S:218 | F: 60
+loading: C:\ARC-AGI-master\data\evaluation\b7fb29bc.json
+ - Count: 243 | S:218 | F: 61
+loading: C:\ARC-AGI-master\data\evaluation\b942fd60.json
+ - Count: 244 | S:219 | F: 61
+loading: C:\ARC-AGI-master\data\evaluation\b9630600.json
+Error: A task was canceled.
+ - Count: 244 | S:219 | F: 62
+loading: C:\ARC-AGI-master\data\evaluation\ba9d41b8.json
+ - Count: 245 | S:220 | F: 62
+loading: C:\ARC-AGI-master\data\evaluation\baf41dbf.json
+ - Count: 246 | S:221 | F: 62
+loading: C:\ARC-AGI-master\data\evaluation\bb52a14b.json
+Error: A task was canceled.
+ - Count: 246 | S:221 | F: 63
+loading: C:\ARC-AGI-master\data\evaluation\bbb1b8b6.json
+Error: Invalid property identifier character: [. Path 'output', line 1, position 52.
+ - Count: 247 | S:221 | F: 64
+loading: C:\ARC-AGI-master\data\evaluation\bc4146bd.json
+ - Count: 248 | S:222 | F: 64
+loading: C:\ARC-AGI-master\data\evaluation\bcb3040b.json
+ - Count: 249 | S:223 | F: 64
+loading: C:\ARC-AGI-master\data\evaluation\bd14c3bf.json
+Error: A task was canceled.
+ - Count: 249 | S:223 | F: 65
+loading: C:\ARC-AGI-master\data\evaluation\be03b35f.json
+ - Count: 250 | S:224 | F: 65
+loading: C:\ARC-AGI-master\data\evaluation\bf32578f.json
+ - Count: 251 | S:225 | F: 65
+loading: C:\ARC-AGI-master\data\evaluation\bf699163.json
+ - Count: 252 | S:226 | F: 65
+loading: C:\ARC-AGI-master\data\evaluation\bf89d739.json
+ - Count: 253 | S:226 | F: 66
+loading: C:\ARC-AGI-master\data\evaluation\c074846d.json
+ - Count: 254 | S:226 | F: 67
+loading: C:\ARC-AGI-master\data\evaluation\c1990cce.json
+ - Count: 255 | S:227 | F: 67
+loading: C:\ARC-AGI-master\data\evaluation\c3202e5a.json
+ - Count: 256 | S:228 | F: 67
+loading: C:\ARC-AGI-master\data\evaluation\c35c1b4c.json
+ - Count: 257 | S:229 | F: 67
+loading: C:\ARC-AGI-master\data\evaluation\c48954c1.json
+ - Count: 258 | S:230 | F: 67
+loading: C:\ARC-AGI-master\data\evaluation\c62e2108.json
+Error: A task was canceled.
+ - Count: 258 | S:230 | F: 68
+loading: C:\ARC-AGI-master\data\evaluation\c64f1187.json
+ - Count: 259 | S:231 | F: 68
+loading: C:\ARC-AGI-master\data\evaluation\c658a4bd.json
+ - Count: 260 | S:232 | F: 68
+loading: C:\ARC-AGI-master\data\evaluation\c663677b.json
+Error: A task was canceled.
+ - Count: 260 | S:232 | F: 69
+loading: C:\ARC-AGI-master\data\evaluation\c6e1b8da.json
+ - Count: 261 | S:232 | F: 70
+loading: C:\ARC-AGI-master\data\evaluation\c7d4e6ad.json
+ - Count: 262 | S:233 | F: 70
+loading: C:\ARC-AGI-master\data\evaluation\c87289bb.json
+ - Count: 263 | S:234 | F: 70
+loading: C:\ARC-AGI-master\data\evaluation\c8b7cc0f.json
+ - Count: 264 | S:235 | F: 70
+loading: C:\ARC-AGI-master\data\evaluation\c92b942c.json
+ - Count: 265 | S:236 | F: 70
+loading: C:\ARC-AGI-master\data\evaluation\c97c0139.json
+Error: A task was canceled.
+ - Count: 265 | S:236 | F: 71
+loading: C:\ARC-AGI-master\data\evaluation\ca8de6ea.json
+ - Count: 266 | S:237 | F: 71
+loading: C:\ARC-AGI-master\data\evaluation\ca8f78db.json
+Error: A task was canceled.
+ - Count: 266 | S:237 | F: 72
+loading: C:\ARC-AGI-master\data\evaluation\cad67732.json
+ - Count: 267 | S:238 | F: 72
+loading: C:\ARC-AGI-master\data\evaluation\cb227835.json
+ - Count: 268 | S:239 | F: 72
+loading: C:\ARC-AGI-master\data\evaluation\ccd554ac.json
+Error: A task was canceled.
+ - Count: 268 | S:239 | F: 73
+loading: C:\ARC-AGI-master\data\evaluation\cd3c21df.json
+ - Count: 269 | S:240 | F: 73
+loading: C:\ARC-AGI-master\data\evaluation\ce039d91.json
+ - Count: 270 | S:241 | F: 73
+loading: C:\ARC-AGI-master\data\evaluation\ce8d95cc.json
+ - Count: 271 | S:242 | F: 73
+loading: C:\ARC-AGI-master\data\evaluation\cf133acc.json
+ - Count: 272 | S:243 | F: 73
+loading: C:\ARC-AGI-master\data\evaluation\cfb2ce5a.json
+ - Count: 273 | S:244 | F: 73
+loading: C:\ARC-AGI-master\data\evaluation\d017b73f.json
+ - Count: 274 | S:245 | F: 73
+loading: C:\ARC-AGI-master\data\evaluation\d19f7514.json
+ - Count: 275 | S:246 | F: 73
+loading: C:\ARC-AGI-master\data\evaluation\d282b262.json
+ - Count: 276 | S:247 | F: 73
+loading: C:\ARC-AGI-master\data\evaluation\d2acf2cb.json
+ - Count: 277 | S:248 | F: 73
+loading: C:\ARC-AGI-master\data\evaluation\d304284e.json
+Error: A task was canceled.
+ - Count: 277 | S:248 | F: 74
+loading: C:\ARC-AGI-master\data\evaluation\d37a1ef5.json
+ - Count: 278 | S:249 | F: 74
+loading: C:\ARC-AGI-master\data\evaluation\d47aa2ff.json
+ - Count: 279 | S:249 | F: 75
+loading: C:\ARC-AGI-master\data\evaluation\d492a647.json
+ - Count: 280 | S:250 | F: 75
+loading: C:\ARC-AGI-master\data\evaluation\d4b1c2b1.json
+ - Count: 281 | S:251 | F: 75
+loading: C:\ARC-AGI-master\data\evaluation\d4c90558.json
+ - Count: 282 | S:252 | F: 75
+loading: C:\ARC-AGI-master\data\evaluation\d56f2372.json
+ - Count: 283 | S:253 | F: 75
+loading: C:\ARC-AGI-master\data\evaluation\d5c634a2.json
+ - Count: 284 | S:254 | F: 75
+loading: C:\ARC-AGI-master\data\evaluation\d931c21c.json
+Error: A task was canceled.
+ - Count: 284 | S:254 | F: 76
+loading: C:\ARC-AGI-master\data\evaluation\d94c3b52.json
+ - Count: 285 | S:254 | F: 77
+loading: C:\ARC-AGI-master\data\evaluation\da2b0fe3.json
+ - Count: 286 | S:254 | F: 78
+loading: C:\ARC-AGI-master\data\evaluation\da515329.json
+Error: A task was canceled.
+ - Count: 286 | S:254 | F: 79
+loading: C:\ARC-AGI-master\data\evaluation\dc2aa30b.json
+ - Count: 287 | S:255 | F: 79
+loading: C:\ARC-AGI-master\data\evaluation\dc2e9a9d.json
+Error: A task was canceled.
+ - Count: 287 | S:255 | F: 80
+loading: C:\ARC-AGI-master\data\evaluation\dd2401ed.json
+ - Count: 288 | S:256 | F: 80
+loading: C:\ARC-AGI-master\data\evaluation\de493100.json
+ - Count: 289 | S:257 | F: 80
+loading: C:\ARC-AGI-master\data\evaluation\df8cc377.json
+Error: A task was canceled.
+ - Count: 289 | S:257 | F: 81
+loading: C:\ARC-AGI-master\data\evaluation\e0fb7511.json
+ - Count: 290 | S:258 | F: 81
+loading: C:\ARC-AGI-master\data\evaluation\e133d23d.json
+ - Count: 291 | S:259 | F: 81
+loading: C:\ARC-AGI-master\data\evaluation\e1baa8a4.json
+ - Count: 292 | S:260 | F: 81
+loading: C:\ARC-AGI-master\data\evaluation\e1d2900e.json
+Error: A task was canceled.
+ - Count: 292 | S:260 | F: 82
+loading: C:\ARC-AGI-master\data\evaluation\e2092e0c.json
+Error: A task was canceled.
+ - Count: 292 | S:260 | F: 83
+loading: C:\ARC-AGI-master\data\evaluation\e21a174a.json
+Error: Invalid property identifier character: [. Path 'output', line 1, position 124.
+ - Count: 293 | S:260 | F: 84
+loading: C:\ARC-AGI-master\data\evaluation\e345f17b.json
+Error: Invalid property identifier character: [. Path 'output', line 1, position 52.
+ - Count: 294 | S:260 | F: 85
+loading: C:\ARC-AGI-master\data\evaluation\e4075551.json
+ - Count: 295 | S:261 | F: 85
+loading: C:\ARC-AGI-master\data\evaluation\e41c6fd3.json
+Error: A task was canceled.
+ - Count: 295 | S:261 | F: 86
+loading: C:\ARC-AGI-master\data\evaluation\e57337a4.json
+ - Count: 296 | S:262 | F: 86
+loading: C:\ARC-AGI-master\data\evaluation\e5790162.json
+ - Count: 297 | S:263 | F: 86
+loading: C:\ARC-AGI-master\data\evaluation\e5c44e8f.json
+ - Count: 298 | S:264 | F: 86
+loading: C:\ARC-AGI-master\data\evaluation\e619ca6e.json
+Error: A task was canceled.
+ - Count: 298 | S:264 | F: 87
+loading: C:\ARC-AGI-master\data\evaluation\e633a9e5.json
+ - Count: 299 | S:265 | F: 87
+loading: C:\ARC-AGI-master\data\evaluation\e66aafb8.json
+Error: A task was canceled.
+ - Count: 299 | S:265 | F: 88
+loading: C:\ARC-AGI-master\data\evaluation\e681b708.json
+Error: A task was canceled.
+ - Count: 299 | S:265 | F: 89
+loading: C:\ARC-AGI-master\data\evaluation\e69241bd.json
+ - Count: 300 | S:266 | F: 89
+loading: C:\ARC-AGI-master\data\evaluation\e6de6e8f.json
+ - Count: 301 | S:267 | F: 89
+loading: C:\ARC-AGI-master\data\evaluation\e74e1818.json
+ - Count: 302 | S:267 | F: 90
+loading: C:\ARC-AGI-master\data\evaluation\e760a62e.json
+Error: A task was canceled.
+ - Count: 302 | S:267 | F: 91
+loading: C:\ARC-AGI-master\data\evaluation\e7639916.json
+ - Count: 303 | S:268 | F: 91
+loading: C:\ARC-AGI-master\data\evaluation\e78887d1.json
+ - Count: 304 | S:269 | F: 91
+loading: C:\ARC-AGI-master\data\evaluation\e7a25a18.json
+ - Count: 305 | S:270 | F: 91
+loading: C:\ARC-AGI-master\data\evaluation\e7b06bea.json
+ - Count: 306 | S:271 | F: 91
+loading: C:\ARC-AGI-master\data\evaluation\e7dd8335.json
+ - Count: 307 | S:272 | F: 91
+loading: C:\ARC-AGI-master\data\evaluation\e872b94a.json
+ - Count: 308 | S:273 | F: 91
+loading: C:\ARC-AGI-master\data\evaluation\e88171ec.json
+Error: A task was canceled.
+ - Count: 308 | S:273 | F: 92
+loading: C:\ARC-AGI-master\data\evaluation\e95e3d8e.json
+ - Count: 309 | S:274 | F: 92
+loading: C:\ARC-AGI-master\data\evaluation\e99362f0.json
+Error: A task was canceled.
+ - Count: 309 | S:274 | F: 93
+loading: C:\ARC-AGI-master\data\evaluation\e9ac8c9e.json
+ - Count: 310 | S:275 | F: 93
+loading: C:\ARC-AGI-master\data\evaluation\e9b4f6fc.json
+ - Count: 311 | S:276 | F: 93
+loading: C:\ARC-AGI-master\data\evaluation\e9bb6954.json
+Error: A task was canceled.
+ - Count: 311 | S:276 | F: 94
+loading: C:\ARC-AGI-master\data\evaluation\e9c9d9a1.json
+ - Count: 312 | S:277 | F: 94
+loading: C:\ARC-AGI-master\data\evaluation\ea959feb.json
+ - Count: 313 | S:278 | F: 94
+loading: C:\ARC-AGI-master\data\evaluation\ea9794b1.json
+ - Count: 314 | S:279 | F: 94
+loading: C:\ARC-AGI-master\data\evaluation\ecaa0ec1.json
+ - Count: 315 | S:280 | F: 94
+loading: C:\ARC-AGI-master\data\evaluation\ed74f2f2.json
+ - Count: 316 | S:281 | F: 94
+loading: C:\ARC-AGI-master\data\evaluation\ed98d772.json
+ - Count: 317 | S:282 | F: 94
+loading: C:\ARC-AGI-master\data\evaluation\ef26cbf6.json
+ - Count: 318 | S:283 | F: 94
+loading: C:\ARC-AGI-master\data\evaluation\f0afb749.json
+ - Count: 319 | S:284 | F: 94
+loading: C:\ARC-AGI-master\data\evaluation\f0df5ff0.json
+ - Count: 320 | S:285 | F: 94
+loading: C:\ARC-AGI-master\data\evaluation\f21745ec.json
+Error: A task was canceled.
+ - Count: 320 | S:285 | F: 95
+loading: C:\ARC-AGI-master\data\evaluation\f3b10344.json
+Error: A task was canceled.
+ - Count: 320 | S:285 | F: 96
+loading: C:\ARC-AGI-master\data\evaluation\f3cdc58f.json
+ - Count: 321 | S:286 | F: 96
+loading: C:\ARC-AGI-master\data\evaluation\f3e62deb.json
+ - Count: 322 | S:286 | F: 97
+loading: C:\ARC-AGI-master\data\evaluation\f4081712.json
+ - Count: 323 | S:287 | F: 97
+loading: C:\ARC-AGI-master\data\evaluation\f45f5ca7.json
+ - Count: 324 | S:288 | F: 97
+loading: C:\ARC-AGI-master\data\evaluation\f5aa3634.json
+ - Count: 325 | S:289 | F: 97
+loading: C:\ARC-AGI-master\data\evaluation\f5c89df1.json
+ - Count: 326 | S:290 | F: 97
+loading: C:\ARC-AGI-master\data\evaluation\f823c43c.json
+ - Count: 327 | S:291 | F: 97
+loading: C:\ARC-AGI-master\data\evaluation\f83cb3f6.json
+ - Count: 328 | S:292 | F: 97
+loading: C:\ARC-AGI-master\data\evaluation\f8be4b64.json
+Error: A task was canceled.
+ - Count: 328 | S:292 | F: 98
+loading: C:\ARC-AGI-master\data\evaluation\f9a67cb5.json
+ - Count: 329 | S:293 | F: 98
+loading: C:\ARC-AGI-master\data\evaluation\f9d67f8b.json
+Error: A task was canceled.
+ - Count: 329 | S:293 | F: 99
+loading: C:\ARC-AGI-master\data\evaluation\fafd9572.json
+ - Count: 330 | S:294 | F: 99
+loading: C:\ARC-AGI-master\data\evaluation\fb791726.json
+ - Count: 331 | S:295 | F: 99
+loading: C:\ARC-AGI-master\data\evaluation\fc754716.json
+ - Count: 332 | S:296 | F: 99
+loading: C:\ARC-AGI-master\data\evaluation\fd096ab6.json
+Error: A task was canceled.
+ - Count: 332 | S:296 | F: 100
+loading: C:\ARC-AGI-master\data\evaluation\fd4b2b02.json
+Error: A task was canceled.
+ - Count: 332 | S:296 | F: 101
+loading: C:\ARC-AGI-master\data\evaluation\fe9372f3.json
+ - Count: 333 | S:296 | F: 102
+loading: C:\ARC-AGI-master\data\evaluation\fea12743.json
+ - Count: 334 | S:297 | F: 102
+loading: C:\ARC-AGI-master\data\evaluation\ff72ca3e.json
+Error: A task was canceled.
+ - Count: 334 | S:297 | F: 103
+
+ARC Tests Complete
+total tests: 334
+Success %: 88.9221549034119
+Total Successes: 297
+Total Failure: 103
+
+
+agi: writelog set C:\ARC-AGI-master\log.txt
+File written successfully.
+
+
+agi:
