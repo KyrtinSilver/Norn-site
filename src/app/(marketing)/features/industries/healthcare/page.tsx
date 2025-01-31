@@ -156,7 +156,7 @@ const clinicalSolutions = [
     title: "Diagnostic Support",
     description: "AI-enhanced medical imaging and diagnostic tools.",
     benefits: [
-      "Advanced image analysis",
+      "Improving image analysis",
       "Pattern recognition in medical data",
       "Early disease detection"
     ]
