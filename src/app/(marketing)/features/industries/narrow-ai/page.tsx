@@ -38,23 +38,23 @@ export default function NarrowAIPage() {
               <div className="grid grid-cols-2 gap-x-16 gap-y-6 font-normal">
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Task Optimization: Specialized process enhancement</span>
+                  <span>Taking the guesswork out of “Prompting”</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Efficiency: Focused solutions for specific needs</span>
+                  <span>Efficiency: Getting more value from less data and hardware</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Integration: Seamless workflow incorporation</span>
+                  <span>Integration: Making your AI tools look better</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Scalability: Adaptable to growing demands</span>
+                  <span>Scalability: Adapting to market demands</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Performance: Measurable outcome improvements</span>
+                  <span>Performance: In the KPIs you have, and the KPIs that you need</span>
                 </div>
               </div>
             </div>
