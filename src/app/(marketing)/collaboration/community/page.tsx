@@ -26,7 +26,7 @@ export default function CommunityPage() {
             </p>
             <Button asChild size="lg">
               <Link href="/collaboration">
-                Back to Collaboration
+                Back to Future
               </Link>
             </Button>
           </div>
