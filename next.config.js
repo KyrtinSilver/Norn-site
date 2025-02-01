@@ -32,7 +32,7 @@ const nextConfig = {
       punycode: false,
     }
     return config
-  },
+  }
 }
 
 module.exports = nextConfig
