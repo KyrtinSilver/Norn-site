@@ -4,7 +4,7 @@ This is a Next.js static site using the App Router, TypeScript, Tailwind CSS, an
 
 ### Prerequisites
 
-- Node.js 18.17 or later
+- Node.js LTS
 - npm (comes with Node.js)
 
 ### Installation Steps
@@ -28,15 +28,25 @@ The site will be available at http://localhost:3000
 
 4. Build Static Site:
 ```bash
-npm run build:static
+npm run build
 ```
-This will create an optimized production build in the `out` directory.
 
-5. Serve Static Build Locally:
+4. Windows Notes:
+
+To unrestrict use of scripts to install package dependencies, run the following powershell command:
 ```bash
-npm run serve
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
-The static site will be served at http://localhost:3000
+
+To check the status of the current execution policy, run the following command:
+```bash
+Get-ExecutionPolicy -List
+```
+
+To undo the execution policy, run the following command:
+```bash
+Set-ExecutionPolicy Restricted -Scope CurrentUser
+```
 
 ### Project Structure
 
@@ -48,8 +58,7 @@ The static site will be served at http://localhost:3000
 ### Key Commands
 
 - `npm run dev` - Start development server
-- `npm run build:static` - Build static site
-- `npm run serve` - Serve static build locally
+- `npm run build` - Build static site
 - `npm run lint` - Run ESLint
 
 ### Dependencies
@@ -66,14 +75,7 @@ The project uses:
 
 The site is configured for static export and can be deployed to any static hosting service. For GitHub Pages deployment:
 
-1. Build the static site:
-```bash
-npm run build:static
-```
-
-2. The `out` directory will contain all static files ready for deployment.
-
-3. For GitHub Pages, ensure:
+For GitHub Pages, ensure:
 - The repository is configured to deploy from the correct branch/directory
 - A `.nojekyll` file exists (created automatically by build:static)
 - CNAME is set to `norn.ai` if using custom domain 
