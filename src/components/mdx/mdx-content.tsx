@@ -1,24 +1,16 @@
 'use client'
 
-import dynamic from 'next/dynamic'
+import { MDXRemote } from 'next-mdx-remote/rsc'
+import type { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-const ContactForm = dynamic(() => import('@/components/contact-form'), {
-  ssr: false,
-})
-
-const Map = dynamic(() => import('@/components/map'), {
-  ssr: false,
-})
-
-const components = {
-  ContactForm,
-  Map,
+type MDXContentProps = {
+  content: MDXRemoteSerializeResult
 }
 
-export function MDXContent({ content }: { content: React.ReactNode }) {
+export function MDXContent({ content }: MDXContentProps) {
   return (
-    <div className="prose dark:prose-invert max-w-none">
-      {content}
+    <div className="prose prose-gray dark:prose-invert max-w-none">
+      <MDXRemote source={content.compiledSource} />
     </div>
   )
-} 
+}

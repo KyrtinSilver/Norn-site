@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Map, CheckCircle2, Circle, Clock, Star, Shield, Network, Users } from "lucide-react"
+import { ArrowRight, CheckCircle2, Circle, Clock, Shield, Network, Users } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {

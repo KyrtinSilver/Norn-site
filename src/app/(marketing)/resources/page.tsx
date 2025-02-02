@@ -4,7 +4,6 @@ import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Book, FileText, Video, MessageSquare, FileIcon, Map } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function ResourcesPage() {
   return (
@@ -171,7 +170,7 @@ export default function ResourcesPage() {
                 <div className="flex-1">
                   <h3 className="text-xl font-[500] mb-2">Norn.ai Technical Whitepaper</h3>
                   <p className="text-muted-foreground font-[400] mb-6">
-                    A detailed exploration of our technology stack, architecture, and implementation strategies. Learn how Norn.ai is advancing the frontiers of artificial intelligence.
+                    A detailed exploration of our technology stack, architecture, and implementation strategies. Learn how Norn.ai's advancing the frontiers of artificial intelligence.
                   </p>
                   <Button asChild>
                     <Link href="/resources/whitepaper">

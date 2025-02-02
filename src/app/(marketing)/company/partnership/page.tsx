@@ -81,7 +81,7 @@ export default function PartnershipPage() {
             <div className="max-w-2xl mb-12">
               <h2 className="text-3xl font-[500] tracking-tight mb-4">Partner With Us</h2>
               <p className="text-xl font-[400] text-muted-foreground">
-                Interested in exploring partnership opportunities? Let's discuss how we can work together.
+                Interested in exploring partnership opportunities? Let's discuss how we can work together to create innovative AI solutions.
               </p>
             </div>
             <div className="max-w-2xl bg-background rounded-lg shadow-sm p-8">

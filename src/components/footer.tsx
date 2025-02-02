@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { useTheme } from "next-themes"
 import { Container } from "@/components/ui/container"
 
 const footerLinks = {

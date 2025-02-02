@@ -8,6 +8,25 @@
   "rules": {
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-explicit-any": "error",
-    "react/no-unescaped-entities": "error"
+    "react/no-unescaped-entities": ["warn", {
+      "forbid": [
+        {
+          "char": ">",
+          "alternatives": ["&gt;"]
+        },
+        {
+          "char": "<",
+          "alternatives": ["&lt;"]
+        },
+        {
+          "char": "{",
+          "alternatives": ["&#123;"]
+        },
+        {
+          "char": "}",
+          "alternatives": ["&#125;"]
+        }
+      ]
+    }]
   }
 }

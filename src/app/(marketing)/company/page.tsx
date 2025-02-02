@@ -4,7 +4,6 @@ import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Users, Briefcase, Shield, Phone } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function CompanyPage() {
   return (
@@ -168,24 +167,6 @@ export default function CompanyPage() {
     </div>
   )
 }
-
-const companySections = [
-  {
-    title: "Our Team",
-    description: "Meet the experts and innovators behind Norn.ai's development.",
-    href: "/company/team"
-  },
-  {
-    title: "Careers",
-    description: "Join us in building the future of artificial intelligence.",
-    href: "/company/careers"
-  },
-  {
-    title: "Contact",
-    description: "Get in touch with our team for inquiries and collaboration.",
-    href: "/company/contact"
-  }
-]
 
 const companyValues = [
   {

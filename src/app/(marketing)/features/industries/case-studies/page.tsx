@@ -25,8 +25,8 @@ export default function CaseStudiesPage() {
               <h1 className="text-7xl font-medium tracking-tight mb-6">
                 Case Studies
               </h1>
-              <p className="text-xl font-normal text-muted-foreground">
-                We're currently preparing detailed case studies showcasing how Norn is transforming industries. Check back soon to explore real-world applications and success stories.
+              <p className="text-xl font-[400] text-muted-foreground">
+                Explore Norn.ai's success stories across different industries and applications.
               </p>
             </div>
           </div>

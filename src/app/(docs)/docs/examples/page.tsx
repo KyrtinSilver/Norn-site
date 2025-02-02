@@ -1,4 +1,3 @@
-import { Metadata } from "next"
 import { ComingSoon } from "@/components/coming-soon"
 import { noIndexMetadata } from '@/lib/metadata'
 

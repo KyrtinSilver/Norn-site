@@ -40,7 +40,7 @@ export default function PressPage() {
                 Press & Media
               </h1>
               <p className="text-xl font-[400] text-muted-foreground">
-                Get the latest news and resources about Norn.ai's innovations in AI technology and development.
+                Stay updated with Norn.ai's latest news, announcements, and media coverage.
               </p>
             </div>
           </div>

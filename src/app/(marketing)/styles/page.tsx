@@ -11,6 +11,7 @@ import { StaffCard } from '@/components/ui/StaffCard'
 import { LinkCard } from '@/components/ui/LinkCard'
 import { ToastDemo } from '@/components/ui/toast-demo'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Sun, Moon } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -28,10 +29,12 @@ export default function StylesPage() {
       {/* Full Width Background Example */}
       <section className="w-full">
         <div className="relative aspect-[21/9] w-full">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80"
             alt="Space and technology"
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            className="object-cover"
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-background/20 backdrop-blur-[2px]" />
           <div className="relative z-10 h-full flex items-center">
@@ -55,10 +58,11 @@ export default function StylesPage() {
             <div>
               <h4 className="text-sm font-medium mb-4">Constrained Image (16:9)</h4>
               <div className="relative aspect-video rounded-lg overflow-hidden">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?auto=format&fit=crop&w=2000&q=80"
                   alt="Circuit patterns"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-background/90" />
                 <div className="relative z-10 p-8">
@@ -72,10 +76,11 @@ export default function StylesPage() {
             <div>
               <h4 className="text-sm font-medium mb-4">Glass Effect</h4>
               <div className="relative aspect-video rounded-lg overflow-hidden">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?auto=format&fit=crop&w=2000&q=80"
                   alt="Abstract architecture"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-background/40 backdrop-blur-[12px] backdrop-saturate-150" />
                 <div className="relative z-10 p-8">

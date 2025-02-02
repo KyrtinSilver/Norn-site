@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Product | Norn.ai",
-  description: "Explore Norn&apos;s core product features including cognitive architecture, safety framework, and knowledge integration."
+  description: "Explore Norn's core product features including cognitive architecture, safety framework, and knowledge integration."
 }
 
 export default function ProductPage() {
@@ -21,7 +21,7 @@ export default function ProductPage() {
                 Core Product Features
               </h1>
               <p className="text-xl font-[400] text-muted-foreground">
-                Discover how Norn&apos;s advanced AI technology combines cognitive architecture, safety frameworks, and knowledge integration to deliver powerful, reliable solutions.
+                Discover how Norn's advanced AI technology combines cognitive architecture, safety frameworks, and knowledge integration to deliver powerful, reliable solutions.
               </p>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function ProductPage() {
           <div className="max-w-[85rem] mx-auto text-center">
             <h2 className="text-3xl font-[500] tracking-tight mb-4">Ready to Get Started?</h2>
             <p className="text-xl font-[400] text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Experience the power of Norn&apos;s advanced AI technology for your organization.
+              Experience the power of Norn's advanced AI technology for your organization.
             </p>
             <div className="flex gap-4 justify-center">
               <Button asChild size="lg">

@@ -6,7 +6,6 @@ import { DocsSearch } from "@/components/docs/search"
 import { docsConfig } from "@/config/docs"
 import { ModeToggle } from "@/components/mode-toggle"
 import Image from "next/image"
-import { useTheme } from "next-themes"
 import * as React from "react"
 
 interface AppSidebarProps {
@@ -14,7 +13,6 @@ interface AppSidebarProps {
 }
 
 export function AppSidebar({ className }: AppSidebarProps) {
-  const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = React.useState(false)
 
   React.useEffect(() => {
@@ -30,8 +28,6 @@ export function AppSidebar({ className }: AppSidebarProps) {
       </nav>
     )
   }
-
-  const logoSrc = resolvedTheme === 'dark' ? '/brand/logo-dark.svg' : '/brand/logo-light.svg'
 
   return (
     <nav className={cn("h-screen flex-col", className)}>

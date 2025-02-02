@@ -77,8 +77,8 @@ export default function DocsPage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl font-[500] tracking-tight">Documentation Access</h1>
-                <p className="text-xl text-muted-foreground">
-                  Get access to our comprehensive documentation and start building with Norn.ai.
+                <p className="text-xl font-[400] text-muted-foreground">
+                  Everything you need to know about integrating and using Norn.ai's AI solutions.
                 </p>
               </div>
               

@@ -1,9 +1,6 @@
 'use client'
 
 import { Container } from "@/components/ui/container"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
 import {
   Accordion,
   AccordionContent,
@@ -22,8 +19,8 @@ export default function HealthcarePage() {
               <h1 className="text-7xl font-medium tracking-tight mb-6">
                 Healthcare AI Solutions
               </h1>
-              <p className="text-xl font-normal text-muted-foreground">
-                Revolutionize patient care and medical research with Norn's advanced AI solutions. Our systems enhance diagnostic accuracy, accelerate research, and improve healthcare delivery.
+              <p className="text-xl font-[400] text-muted-foreground">
+                Discover how Norn.ai's AI solutions are revolutionizing healthcare with advanced diagnostics and personalized medicine.
               </p>
             </div>
           </div>

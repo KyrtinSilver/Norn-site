@@ -100,7 +100,7 @@ const faqs: FAQ[] = [
   },
   {
     question: "How does Norn compare to RAG?",
-    answer: "RAG, Retrieval Augmented Generation, is a (largely failed) attempt to integrate deterministic knowledge into probabilistic systems, such as LLMs, for handling arbitrary knowledge and scopes. Norn&apos;s fundamental architecture is natively based on graph data, not neural networks, so graph data is not only ever-present as the foundation, it has a rich, dynamically adaptive and growing connectome to add full contextual awareness at any level of granularity that a given subject may require. Our systems were built from scratch for these capacities, where methods like RAG are weak and shallow imitations, applied to technology that can handle no more than that."
+    answer: "RAG, Retrieval Augmented Generation, is a (largely failed) attempt to integrate deterministic knowledge into probabilistic systems, such as LLMs, for handling arbitrary knowledge and scopes. Norn's fundamental architecture is natively based on graph data, not neural networks, so graph data is not only ever-present as the foundation, it has a rich, dynamically adaptive and growing connectome to add full contextual awareness at any level of granularity that a given subject may require. Our systems were built from scratch for these capacities, where methods like RAG are weak and shallow imitations, applied to technology that can handle no more than that."
   },
   {
     question: "How does Norn compare to CoT methods?",

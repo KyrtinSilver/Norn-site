@@ -1,5 +1,6 @@
 import { FullWidthSection } from "@/components/ui/FullWidthSection"
 import { backgroundStyles, getBackgroundStyle } from "@/styles/background-styles"
+import Image from "next/image"
 
 export default function BackgroundStylesPage() {
   return (
@@ -13,10 +14,12 @@ export default function BackgroundStylesPage() {
 
       {/* Full Width Image Examples */}
       <section className="relative h-[60vh] w-full">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80"
           alt="Space and technology"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
         <div className="absolute inset-0 bg-gradient-to-br from-background to-background/20" />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -25,10 +28,11 @@ export default function BackgroundStylesPage() {
       </section>
 
       <section className="relative h-[60vh] w-full">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?auto=format&fit=crop&w=2000&q=80"
           alt="Abstract architecture"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-background/40 backdrop-blur-[12px] backdrop-saturate-150" />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -37,10 +41,11 @@ export default function BackgroundStylesPage() {
       </section>
 
       <section className="relative h-[60vh] w-full">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?auto=format&fit=crop&w=2000&q=80"
           alt="Circuit patterns"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-background/80" />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -49,10 +54,11 @@ export default function BackgroundStylesPage() {
       </section>
 
       <section className="relative h-[60vh] w-full">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=2000&q=80"
           alt="Futuristic architectural skyline"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent" />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -61,7 +67,7 @@ export default function BackgroundStylesPage() {
       </section>
 
       {/* Background Style Examples */}
-      {Object.entries(backgroundStyles).map(([name, _]) => (
+      {Object.keys(backgroundStyles).map((name) => (
         <FullWidthSection
           key={name}
           background={getBackgroundStyle(name as keyof typeof backgroundStyles)}

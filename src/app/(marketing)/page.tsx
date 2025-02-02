@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
 import { Container } from "@/components/ui/container"
-import { ArrowRight, Brain, Shield, Network, Sparkles, ChevronRight, TrendingUp, Users, Lightbulb, Search, Zap, Server, Scale, Leaf, Database, RefreshCw, ShieldCheck, Globe, BookOpen, ArrowLeft } from "lucide-react"
+import { ArrowRight, Brain, Shield, Network, Sparkles, ChevronRight, TrendingUp, Users, Lightbulb, Search, Zap, Server, Scale, Leaf } from "lucide-react"
 import Image from "next/image"
 import { TimelineNav } from './components/timeline-nav'
 
@@ -427,44 +426,5 @@ const timeline = [
     year: "2022",
     description: "AGI Laboratory's research system phase concludes, and development of Norn begins, accelerating the timeline towards AGI.",
     image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1200&auto=format&fit=crop"
-  }
-]
-
-const capabilities = [
-  {
-    title: "Data Efficiency",
-    description: "Reduce your costs of storing, moving, cleaning, and processing data by >90% with less data-hungry systems.",
-    href: "/features/product",
-    icon: <Database className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Real-Time Adaptation",
-    description: "Systems built to extend their capacities in real-time, without recompiling or deployments.",
-    href: "/features/product",
-    icon: <RefreshCw className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Research Rapidly",
-    description: "Review and validate more research more quickly, saving >90% on time and costs over traditional consultancies.",
-    href: "/research",
-    icon: <Search className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Fight Fraud",
-    description: "Audit, detect, and investigate dynamically and automatically, in real-time.",
-    href: "/features/industries",
-    icon: <ShieldCheck className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Cultural Alignment",
-    description: "Work with systems that share and learn your culture, aligning locally while being accountable globally.",
-    href: "/features/product",
-    icon: <Users className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Global Knowledge",
-    description: "Benefit from systems that study government policies and their effects around the world.",
-    href: "/research/knowledge-integration",
-    icon: <Globe className="h-6 w-6 text-primary" />
   }
 ] 

@@ -3,9 +3,21 @@
 import { Container } from "@/components/ui/container"
 import Image from "next/image"
 import Link from "next/link"
-import { Code2, Brain, Scale, Microscope } from "lucide-react"
+import { Code2, Scale, Microscope } from "lucide-react"
 
-const TeamCard = ({ member, children }: { member: any, children: React.ReactNode }) => {
+interface TeamMember {
+  name: string
+  role: string
+  points: string[]
+  image?: {
+    light: string
+    dark: string
+  }
+  linkedin?: string
+  icon?: React.ComponentType<{ className?: string; strokeWidth?: number }>
+}
+
+const TeamCard = ({ member, children }: { member: TeamMember, children: React.ReactNode }) => {
   if (member.linkedin) {
     return (
       <Link

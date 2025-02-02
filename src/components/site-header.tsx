@@ -2,14 +2,13 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Menu } from "lucide-react"
+import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  navigationMenuTriggerStyle
+} from "@/components/ui/navigation-menu"
 import { ModeToggle } from "@/components/mode-toggle"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { cn } from "@/lib/utils"
-import { NavigationMenu } from "@/components/navigation-menu"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { NavigationMenuList } from "@radix-ui/react-navigation-menu"
 
 export function SiteHeader() {
   return (

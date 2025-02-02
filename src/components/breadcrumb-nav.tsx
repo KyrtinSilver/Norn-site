@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import Image from "next/image"
-import { useTheme } from "next-themes"
 import { usePathname } from "next/navigation"
 import {
   Breadcrumb,
@@ -15,7 +14,6 @@ import { ChevronRight } from "lucide-react"
 import { Container } from "@/components/ui/container"
 
 export function BreadcrumbNav() {
-  const { resolvedTheme } = useTheme()
   const pathname = usePathname()
   const [mounted, setMounted] = React.useState(false)
 
@@ -78,7 +76,7 @@ export function BreadcrumbNav() {
                 />
               </BreadcrumbLink>
             </BreadcrumbItem>
-            {getBreadcrumbItems(pathname).map((item, index) => (
+            {getBreadcrumbItems(pathname).map((item) => (
               <React.Fragment key={item.href}>
                 <BreadcrumbSeparator className="text-muted-foreground/40">
                   <ChevronRight className="h-3 w-3" />

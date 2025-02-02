@@ -2,9 +2,8 @@
 
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Brain, Network, Lightbulb, Microscope, Code, Shield } from "lucide-react"
+import { ArrowRight, Brain, Network, Microscope, Shield } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function ResearchPage() {
   return (

@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Brain, Network, Shield, Zap } from "lucide-react"
+import { ArrowRight, Brain, Shield, Zap } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function CognitiveSystemsPage() {
                 Cognitive Systems Research
               </h1>
               <p className="text-xl font-[400] text-muted-foreground">
-                Advancing the development of AI systems that can reason, learn, and make decisions with human-like cognitive capabilities while maintaining reliability and safety.
+                Explore Norn.ai's research into advanced cognitive systems and artificial intelligence.
               </p>
             </div>
           </div>

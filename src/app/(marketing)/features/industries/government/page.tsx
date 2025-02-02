@@ -1,23 +1,12 @@
 'use client'
 
 import { Container } from "@/components/ui/container"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/Carousel"
 
 export default function GovernmentPage() {
   return (
@@ -158,29 +147,6 @@ export default function GovernmentPage() {
     </div>
   )
 }
-
-const capabilities = [
-  "In-House Expertise: Deep, broad knowledge available on-demand",
-  "Real-Time Updates: Daily insights from emerging research",
-  "Faster Processes: Superhuman speed and scale",
-  "Enhanced Transparency: Comprehensive source citation",
-  "Complex Problem Solving: Human-like understanding with reduced bias"
-]
-
-const heroImages = [
-  {
-    url: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=2400&q=95",
-    alt: "Modern government architecture and technology"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=2400&q=95",
-    alt: "Smart city implementation"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&w=2400&q=95",
-    alt: "Data visualization and analytics"
-  }
-]
 
 const localSolutions = [
   {

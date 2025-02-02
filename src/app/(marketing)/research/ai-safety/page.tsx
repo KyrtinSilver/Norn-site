@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Shield, Lock, Scale, Zap } from "lucide-react"
+import { ArrowRight, Shield, Scale, Zap } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function AISafetyPage() {
                 AI Safety Research
               </h1>
               <p className="text-xl font-[400] text-muted-foreground">
-                Pioneering research in AI safety and ethics to ensure the development of reliable, transparent, and beneficial artificial intelligence systems.
+                Explore Norn.ai's commitment to developing safe and ethical AI systems.
               </p>
             </div>
           </div>

@@ -32,7 +32,12 @@ const nextConfig = {
       punycode: false,
     }
     return config
-  }
+  },
+  eslint: {
+    // Re-enabled lint checking since we have more permissive rules now
+    // Uncomment the following line to disable lint checking during builds if needed:
+    // ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = nextConfig

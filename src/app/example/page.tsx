@@ -54,8 +54,13 @@ export default function ExamplePage() {
 
       {/* Image background section */}
       <FullWidthSection
-        backgroundType="image"
-        background="/images/hero.jpg"
+        background={{
+          background: {
+            light: `url('/images/hero.jpg')`,
+            dark: `url('/images/hero.jpg')`
+          },
+          className: "bg-cover bg-center"
+        }}
         minHeight="500px"
         className="py-20"
       >

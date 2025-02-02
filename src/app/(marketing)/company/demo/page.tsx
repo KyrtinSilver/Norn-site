@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MessageSquare, Mail, Globe, CheckCircle2, AlertCircle, ArrowRight } from "lucide-react"
+import { CheckCircle2, AlertCircle, ArrowRight } from "lucide-react"
 import { useState, useRef } from "react"
 import { useRouter } from "next/navigation"
 import { toast } from "sonner"
@@ -54,7 +54,7 @@ export default function DemoPage() {
       } else {
         throw new Error(result.message || 'Failed to send request')
       }
-    } catch (error) {
+    } catch {
       toast.error("An error occurred. Please try again.", {
         className: "group",
         style: {

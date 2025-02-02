@@ -4,7 +4,6 @@ import { type BackgroundStyle } from "@/styles/background-styles"
 
 interface FullWidthSectionProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode
-  backgroundType?: "color" | "image" | "animation"
   background?: string | BackgroundStyle
   minHeight?: string | number
   id?: string
@@ -14,7 +13,6 @@ interface FullWidthSectionProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function FullWidthSection({
   children,
-  backgroundType = "color",
   background,
   minHeight = "auto",
   id,

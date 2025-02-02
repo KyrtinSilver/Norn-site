@@ -77,8 +77,8 @@ export default function WhitepaperPage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl font-[500] tracking-tight">Technical Whitepaper</h1>
-                <p className="text-xl text-muted-foreground">
-                  Get access to our comprehensive technical whitepaper detailing Norn.ai's technology and capabilities.
+                <p className="text-xl font-[400] text-muted-foreground">
+                  Learn about Norn.ai's groundbreaking approach to artificial intelligence.
                 </p>
               </div>
               

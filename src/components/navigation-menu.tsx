@@ -5,13 +5,11 @@ import Link from "next/link"
 import { Menu } from "lucide-react"
 import { ModeToggle } from "@/components/mode-toggle"
 import Image from "next/image"
-import { useTheme } from "next-themes"
 import { cn } from "@/lib/utils"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 
 export function NavigationMenu() {
-  const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = React.useState(false)
   const [scrolled, setScrolled] = React.useState(false)
   const [isOpen, setIsOpen] = React.useState(false)

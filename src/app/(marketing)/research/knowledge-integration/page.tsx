@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Network, Database, GitBranch, Zap } from "lucide-react"
+import { ArrowRight, Network, Database, Zap } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function KnowledgeIntegrationPage() {
                 Knowledge Integration Research
               </h1>
               <p className="text-xl font-[400] text-muted-foreground">
-                Developing sophisticated systems for knowledge representation, integration, and retrieval to enhance AI understanding and reasoning capabilities.
+                Explore Norn.ai's research into advanced knowledge integration and AI systems.
               </p>
             </div>
           </div>

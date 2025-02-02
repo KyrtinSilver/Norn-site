@@ -66,7 +66,7 @@ export default function ContactPage() {
           duration: 5000,
         })
       }
-    } catch (error) {
+    } catch {
       toast.error("An error occurred. Please try again.", {
         className: "group",
         style: {

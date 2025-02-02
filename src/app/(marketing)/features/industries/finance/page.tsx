@@ -1,9 +1,6 @@
 'use client'
 
 import { Container } from "@/components/ui/container"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
 import {
   Accordion,
   AccordionContent,
@@ -22,8 +19,8 @@ export default function FinancePage() {
               <h1 className="text-7xl font-medium tracking-tight mb-6">
                 Financial AI Solutions
               </h1>
-              <p className="text-xl font-normal text-muted-foreground">
-                Transform financial services with Norn's advanced AI solutions. Our systems enhance risk assessment, automate trading strategies, and optimize investment decisions.
+              <p className="text-xl font-[400] text-muted-foreground">
+                Discover how Norn.ai's AI solutions are transforming the financial sector with advanced analytics and intelligent automation.
               </p>
             </div>
           </div>

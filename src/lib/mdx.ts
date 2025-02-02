@@ -1,13 +1,17 @@
 import fs from 'fs';
 import path from 'path';
-import { notFound } from 'next/navigation';
 
 const contentDirectory = path.join(process.cwd(), 'src/content');
 
 export interface Frontmatter {
   title?: string;
   description?: string;
-  [key: string]: any;
+  date?: string;
+  author?: string;
+  tags?: string[];
+  image?: string;
+  published?: boolean;
+  [key: string]: string | string[] | boolean | undefined;
 }
 
 export interface Page {

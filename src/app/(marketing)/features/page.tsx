@@ -1,10 +1,8 @@
 'use client'
 
 import { Container } from "@/components/ui/container"
-import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function FeaturesPage() {
   return (
@@ -17,8 +15,8 @@ export default function FeaturesPage() {
               <h1 className="text-7xl font-medium tracking-tight mb-6">
                 Core Features & Capabilities
               </h1>
-              <p className="text-xl font-normal text-muted-foreground">
-                Explore Norn.ai's comprehensive suite of AI capabilities, from advanced language processing to specialized industry solutions.
+              <p className="text-xl font-[400] text-muted-foreground">
+                Discover Norn.ai's advanced AI capabilities and how they can transform your organization.
               </p>
             </div>
           </div>

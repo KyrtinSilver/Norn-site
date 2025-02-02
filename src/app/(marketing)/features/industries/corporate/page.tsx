@@ -1,9 +1,6 @@
 'use client'
 
 import { Container } from "@/components/ui/container"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
 import {
   Accordion,
   AccordionContent,
@@ -22,8 +19,8 @@ export default function CorporatePage() {
               <h1 className="text-7xl font-medium tracking-tight mb-6">
                 Corporate AI Solutions
               </h1>
-              <p className="text-xl font-normal text-muted-foreground">
-                Transform your business operations with Norn's enterprise-grade AI solutions. Our systems enhance decision-making, streamline processes, and drive innovation across your organization.
+              <p className="text-xl font-[400] text-muted-foreground">
+                Discover how Norn.ai's AI solutions are transforming enterprise operations with intelligent automation and data-driven insights.
               </p>
             </div>
           </div>
