@@ -23,7 +23,7 @@ export default function IndustriesPage() {
                 Industry Solutions
               </h1>
               <p className="text-xl font-normal text-muted-foreground">
-                Norn's Scalable Intelligence adapts to the unique challenges and requirements of different industries, delivering transformative AI solutions that drive innovation and efficiency.
+                Norn&apos;s Scalable Intelligence adapts to the unique challenges and requirements of different industries, delivering transformative AI solutions that drive innovation and efficiency.
               </p>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function IndustriesPage() {
             <div className="max-w-2xl mb-12">
               <h2 className="text-3xl font-medium tracking-tight mb-4">Success Stories</h2>
               <p className="text-xl font-normal text-muted-foreground">
-                Discover how organizations across different industries are leveraging Norn's AI solutions to transform their operations and achieve breakthrough results.
+                Discover how organizations across different industries are leveraging Norn&apos;s AI solutions to transform their operations and achieve breakthrough results.
               </p>
               <div className="mt-8">
                 <Button asChild>

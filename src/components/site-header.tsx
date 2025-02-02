@@ -7,15 +7,9 @@ import { ModeToggle } from "@/components/mode-toggle"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+import { NavigationMenu } from "@/components/navigation-menu"
+import { ThemeToggle } from "@/components/theme-toggle"
+import { NavigationMenuList } from "@radix-ui/react-navigation-menu"
 
 export function SiteHeader() {
   return (

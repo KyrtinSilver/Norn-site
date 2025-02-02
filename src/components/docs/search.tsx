@@ -1,9 +1,10 @@
 "use client"
 
+import * as React from "react"
 import { Search } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-interface DocsSearchProps extends React.HTMLAttributes<HTMLDivElement> {}
+type DocsSearchProps = React.HTMLAttributes<HTMLDivElement>;
 
 export function DocsSearch({ className, ...props }: DocsSearchProps) {
   return (
