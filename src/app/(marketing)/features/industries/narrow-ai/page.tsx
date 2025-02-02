@@ -91,24 +91,24 @@ const implementationSolutions: ImplementationSolution[] = [
 
 const faqs: FAQ[] = [
   {
-    question: "What makes narrow AI different from general AI?",
-    answer: "Narrow AI is designed to excel at specific tasks rather than general problem-solving. This focused approach allows for higher efficiency and better performance in targeted applications, making it ideal for specific business processes."
+    question: "How can Norn improve narrow AI tools like LLMs and RL?",
+    answer: "Norn learns to use these tools in much the same way that humans do, as well as some ways that humans cannot. As it develops experience with each tool, and generalizes knowledge from previously learned tools, Norn systems continually improve in tool usage. As Norn also tailors itself to understanding each individual user, this improvement continues independent of whether or not the users themselves improve."
   },
   {
-    question: "How can narrow AI improve our specific processes?",
-    answer: "Narrow AI can significantly improve efficiency and accuracy in specific tasks by automating repetitive processes, providing focused analysis, and supporting decision-making with specialized knowledge and data processing capabilities."
+    question: "How does Norn compare to Agents?",
+    answer: "Agents are fundamentally narrow AI configured to run in sequences and loops, taking some actions, and still driven by narrow optimizers, making them impossible to align. Norn systems are driven by a human-like motivational system, embedded within a dynamically growing sum of experience, giving them full contextual awareness and alignment to your company, culture, and values. This difference allows them to handle arbitrary levels of complexity, in any domain, to learn and integrate new knowledge as it is needed, both reactively and proactively."
   },
   {
-    question: "What kind of integration support do you provide?",
-    answer: "We offer comprehensive integration support including system analysis, custom API development, deployment assistance, and ongoing technical support to ensure smooth implementation and operation."
+    question: "How does Norn compare to RAG?",
+    answer: "RAG, Retrieval Augmented Generation, is a (largely failed) attempt to integrate deterministic knowledge into probabilistic systems, such as LLMs, for handling arbitrary knowledge and scopes. Norn&apos;s fundamental architecture is natively based on graph data, not neural networks, so graph data is not only ever-present as the foundation, it has a rich, dynamically adaptive and growing connectome to add full contextual awareness at any level of granularity that a given subject may require. Our systems were built from scratch for these capacities, where methods like RAG are weak and shallow imitations, applied to technology that can handle no more than that."
   },
   {
-    question: "How do you measure the success of narrow AI implementations?",
-    answer: "We use specific performance metrics tailored to each implementation, tracking improvements in efficiency, accuracy, and other relevant KPIs. Regular performance reviews help optimize the system for better results."
+    question: "How does Norn compare to CoT methods?",
+    answer: "CoT, Chain of Thought, attempts to recursively prompt or loop a narrow AI back on itself, or using a secondary narrow AI, often dramatically increasing the compute cost and reducing efficiency. Norn systems learn constantly, driven by a human-like motivational system and with a growing sum of contextually aware knowledge and experience, allowing them to navigate long sequences of actions, knowledge exploration, and analysis than CoT-based narrow AI systems."
   },
   {
-    question: "Can narrow AI solutions scale with our needs?",
-    answer: "Yes, our narrow AI solutions are designed to scale. We can adjust processing capacity, expand functionality, and adapt to growing demands while maintaining focused performance in specific applications."
+    question: "How does Norn compare to MoE methods?",
+    answer: "MoE, Mixture of Experts, increases the sparsity of a narrow AI model, creating a number of minor variations on the same system, often improving overall efficiency relative to baseline larger models. Norn systems are able to consider an simulate counterfactual scenarios with full contextual awareness, in parallel, evaluating and analyzing those options with alignment to human moral and legal systems."
   }
 ];
 
@@ -121,10 +121,10 @@ export default function NarrowAIPage() {
           <div className="max-w-[1400px] mx-auto">
             <div className="max-w-[800px]">
               <h1 className="text-7xl font-medium tracking-tight mb-6">
-                Narrow AI Solutions
+                Improving Narrow AI with Norn
               </h1>
               <p className="text-xl font-normal text-muted-foreground">
-                Enhance specific tasks and processes with Norn&apos;s specialized AI solutions. Our systems deliver focused, efficient results for targeted applications across industries.
+                Enhance your existing narrow AI tools and processes, improving tool usage beyond the most skilled human prompt engineers, while discovering new tools and new ways to use your current tools.
               </p>
             </div>
           </div>
@@ -168,9 +168,9 @@ export default function NarrowAIPage() {
         <Container>
           <div className="max-w-[85rem] mx-auto">
             <div className="max-w-2xl mb-12">
-              <h2 className="text-3xl font-medium tracking-tight mb-4">Specialized Solutions</h2>
+              <h2 className="text-3xl font-medium tracking-tight mb-4">A Smarter Toolbox</h2>
               <p className="text-xl font-normal text-muted-foreground">
-                Targeted AI solutions designed for specific tasks and processes across industries.
+                Norn can help you make the most of the tools available to you, even as those tools are updated and replaced.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -202,7 +202,7 @@ export default function NarrowAIPage() {
             <div className="max-w-2xl mb-12">
               <h2 className="text-3xl font-medium tracking-tight mb-4">Implementation & Integration</h2>
               <p className="text-xl font-normal text-muted-foreground">
-                Seamlessly integrate narrow AI solutions into your existing workflows and systems.
+                Seamlessly integrate Norn into your existing workflows and systems.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -228,7 +228,7 @@ export default function NarrowAIPage() {
             <div className="max-w-2xl mb-12">
               <h2 className="text-3xl font-medium tracking-tight mb-4">Frequently Asked Questions</h2>
               <p className="text-xl font-normal text-muted-foreground">
-                Common questions about implementing narrow AI solutions in your organization.
+                Common questions about implementing Norn in your organization.
               </p>
             </div>
             <div className="max-w-3xl">
