@@ -20,7 +20,7 @@ export default function CorporatePage() {
                 Corporate AI Solutions
               </h1>
               <p className="text-xl font-[400] text-muted-foreground">
-                Discover how Norn.ai's AI solutions are transforming enterprise operations with intelligent automation and data-driven insights.
+                Discover how Norn.ai's solutions can transform enterprise operations with intelligent automation and data-driven insights.
               </p>
             </div>
           </div>
@@ -35,23 +35,23 @@ export default function CorporatePage() {
               <div className="grid grid-cols-2 gap-x-16 gap-y-6 font-normal">
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Strategic Decision Support: Data-driven insights for better choices</span>
+                  <span>Strategic Decision Support: Truly Data-driven insights for less biased and more robust choices</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Process Optimization: Streamlined workflows and operations</span>
+                  <span>Process Optimization: Iteration and innovation to improve workflows utilizing the latest research</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Innovation Acceleration: Rapid prototyping and development</span>
+                  <span>Innovation Acceleration: Accelerate prototyping and development with more intelligent software</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Knowledge Management: Centralized intelligence repository</span>
+                  <span>Knowledge Improvement: Full transparency and explainability into how your knowledge is turned into novel insights</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="h-2 w-2 rounded-full bg-primary" />
-                  <span>Risk Mitigation: Advanced analysis and prediction</span>
+                  <span>Risk Mitigation: Advanced analysis, prediction, testing, and potential real-time triage</span>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function CorporatePage() {
             <div className="max-w-2xl mb-12">
               <h2 className="text-3xl font-medium tracking-tight mb-4">Enterprise Solutions</h2>
               <p className="text-xl font-normal text-muted-foreground">
-                Our enterprise solutions are designed to scale with your business, providing comprehensive support across all operational areas.
+                Our enterprise solutions are designed to scale with your business, providing the unique advantages of human-like software.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -98,7 +98,7 @@ export default function CorporatePage() {
             <div className="max-w-2xl mb-12">
               <h2 className="text-3xl font-medium tracking-tight mb-4">Innovation & Growth</h2>
               <p className="text-xl font-normal text-muted-foreground">
-                Drive continuous improvement and sustainable growth with AI-powered innovation solutions.
+                Drive continuous improvement and sustainable growth with unique and constantly improving technological and methodological advantages.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -124,7 +124,7 @@ export default function CorporatePage() {
             <div className="max-w-2xl mb-12">
               <h2 className="text-3xl font-medium tracking-tight mb-4">Frequently Asked Questions</h2>
               <p className="text-xl font-normal text-muted-foreground">
-                Common questions about implementing AI solutions in corporate environments.
+                Common questions about implementing Norn in corporate environments.
               </p>
             </div>
             <div className="max-w-3xl">
@@ -153,27 +153,27 @@ const enterpriseSolutions = [
     title: "Strategic Planning",
     description: "AI-powered analysis for informed strategic decision-making.",
     benefits: [
-      "Market trend analysis and prediction",
-      "Competitive intelligence gathering",
-      "Resource allocation optimization"
+      "Market trend analysis and prediction, supported by up-to-date research",
+      "Competitive intelligence gathering, in real-time, and potentially 24/7",
+      "Resource allocation optimization, what you need, and only when you need it"
     ]
   },
   {
     title: "Operations Management",
     description: "Streamline processes and enhance operational efficiency.",
     benefits: [
-      "Workflow automation and optimization",
-      "Supply chain intelligence",
-      "Quality control enhancement"
+      "Workflow automation and optimization, aligned to long-term company value",
+      "Supply chain intelligence, solving more problems upstream",
+      "Quality control enhancement, integrating UX data to understand the full lifecycle"
     ]
   },
   {
     title: "Knowledge Integration",
     description: "Unified knowledge management across the organization.",
     benefits: [
-      "Cross-departmental insights",
-      "Best practices identification",
-      "Institutional knowledge preservation"
+      "Cross-departmental insights, giving your company a mind that any employee may speak with",
+      "Best practices identification, integrating the latest scientific and industry research",
+      "Institutional knowledge preservation, with antifragile security"
     ]
   }
 ]
