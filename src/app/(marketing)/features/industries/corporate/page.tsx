@@ -215,23 +215,23 @@ const innovationSolutions = [
 
 const faqs = [
   {
-    question: "How can Norn.ai integrate with our existing systems?",
-    answer: "Our solutions are designed for seamless integration with your existing infrastructure. We provide flexible APIs and connectors for major enterprise systems, along with custom integration options for specific needs."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "What kind of ROI can we expect from implementing AI solutions?",
-    answer: "ROI varies by implementation, but our clients typically see significant improvements in efficiency (20-30%), decision accuracy (40-50%), and innovation speed (2-3x faster) within the first year of deployment."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "How do you ensure data privacy and security?",
-    answer: "We implement enterprise-grade security measures including encryption, access controls, and compliance with major security standards (SOC 2, ISO 27001). All data handling follows strict privacy protocols and regulatory requirements."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "What support and training do you provide?",
-    answer: "We offer comprehensive support including 24/7 technical assistance, regular training sessions, documentation, and dedicated account management for enterprise clients."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "Can the AI solutions scale with our business growth?",
-    answer: "Yes, our solutions are built to scale. The modular architecture allows for easy expansion, and our cloud-based infrastructure automatically scales to meet increasing demands."
+    question: "Coming soon",
+    answer: "Coming soon"
   }
 ] 

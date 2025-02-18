@@ -215,23 +215,23 @@ const researchSolutions = [
 
 const faqs = [
   {
-    question: "How does Norn.ai ensure patient data privacy and security?",
-    answer: "We implement HIPAA-compliant security measures and follow strict medical data privacy protocols. Our systems use end-to-end encryption, secure access controls, and maintain detailed audit trails for all data interactions."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "Can your AI solutions integrate with existing healthcare systems?",
-    answer: "Yes, our solutions are designed to integrate seamlessly with major EHR systems and healthcare IT infrastructure. We support standard medical data formats and protocols (HL7, FHIR, DICOM) and provide custom integration options."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "What validation has been done for clinical applications?",
-    answer: "Our clinical solutions undergo rigorous validation processes, including peer review, clinical trials where applicable, and compliance with regulatory requirements. We maintain transparency in our validation methodologies and results."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "How do you handle regulatory compliance?",
-    answer: "We maintain compliance with healthcare regulations including HIPAA, GDPR, and FDA requirements where applicable. Our systems are designed with regulatory compliance in mind and undergo regular audits and updates."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "What training is provided for healthcare staff?",
-    answer: "We provide comprehensive training programs including hands-on workshops, online modules, and ongoing support. Training is customized for different roles and skill levels within healthcare organizations."
+    question: "Coming soon",
+    answer: "Coming soon"
   }
 ] 

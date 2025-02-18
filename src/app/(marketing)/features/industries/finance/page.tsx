@@ -215,23 +215,23 @@ const riskSolutions = [
 
 const faqs = [
   {
-    question: "How does Norn.ai ensure the security of financial data?",
-    answer: "We implement bank-grade security measures including encryption, secure access controls, and regular security audits. Our systems comply with financial industry standards and regulations for data protection."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "Can your AI solutions integrate with existing trading platforms?",
-    answer: "Yes, our solutions integrate with major trading platforms and financial systems. We support standard financial protocols and provide APIs for custom integration requirements."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "How do you handle real-time data processing?",
-    answer: "Our systems are built for high-frequency, low-latency data processing. We use advanced infrastructure to ensure real-time analysis and response capabilities for trading and risk management."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "What regulatory compliance standards do you support?",
-    answer: "We maintain compliance with major financial regulations including MiFID II, Basel III, and SEC requirements. Our systems include built-in compliance checking and reporting capabilities."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "How do you ensure accuracy in financial predictions?",
-    answer: "Our AI models undergo rigorous testing and validation. We use multiple data sources, advanced backtesting, and continuous model monitoring to ensure high accuracy and reliability."
+    question: "Coming soon",
+    answer: "Coming soon"
   }
 ] 

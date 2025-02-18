@@ -215,23 +215,23 @@ const nationalSolutions = [
 
 const faqs = [
   {
-    question: "How does Norn.ai ensure data security in government implementations?",
-    answer: "Our solutions adhere to the highest security standards, including FedRAMP compliance, end-to-end encryption, and secure data handling protocols. We implement multiple layers of security measures, including access controls, audit logging, and regular security assessments."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "What kind of training is provided for government staff?",
-    answer: "We provide comprehensive training programs tailored to different user roles within government agencies. This includes hands-on workshops, detailed documentation, video tutorials, and ongoing support for both technical aspects and best practices."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "Can the AI solutions be customized for specific agency needs?",
-    answer: "Yes, our solutions are highly customizable and can be tailored to meet the unique requirements of different government agencies and departments. We work closely with each agency to understand their specific needs and objectives."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "How do you handle data privacy and compliance requirements?",
-    answer: "We maintain strict compliance with all relevant data privacy regulations and government standards, including GDPR and CCPA. Our systems are designed with privacy-by-design principles, ensuring data minimization and transparent processing."
+    question: "Coming soon",
+    answer: "Coming soon"
   },
   {
-    question: "What is the implementation timeline for government projects?",
-    answer: "Implementation timelines vary based on project scope and complexity. Typically, initial deployment can be completed within 3-6 months, followed by a period of optimization and refinement based on agency needs and feedback."
+    question: "Coming soon",
+    answer: "Coming soon"
   }
 ] 
