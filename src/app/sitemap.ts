@@ -10,8 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // Add docs routes
-  const docsDirectory = path.join(process.cwd(), 'src/app/(docs)/docs')
+  // Docs routes removed - docs directory has been archived
+  const docRoutes: { url: string; lastModified: Date }[] = []
+  
   const ignoredPaths = ['[...slug]', 'layout.tsx', 'page.tsx']
   
   function getRoutesFromDir(dir: string, basePath: string = ''): string[] {
@@ -36,11 +37,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     return routes
   }
-
-  const docRoutes = getRoutesFromDir(docsDirectory).map(route => ({
-    url: `https://norn.ai/docs/${route}`,
-    lastModified: new Date(),
-  }))
 
   // Add marketing routes
   const marketingDirectory = path.join(process.cwd(), 'src/app/(marketing)')

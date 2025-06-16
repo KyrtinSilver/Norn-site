@@ -129,15 +129,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <h2 className="text-2xl font-[500]">Looking for Something Specific?</h2>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• For a product demo, visit our <a href="/company/demo" className="text-primary hover:underline">Demo page</a></li>
-                  <li>• For investment opportunities, visit our <a href="/company/investors" className="text-primary hover:underline">Investors page</a></li>
-                  <li>• For partnership inquiries, check our <a href="/company/partnership" className="text-primary hover:underline">Partnership page</a></li>
-                  <li>• For press & media, visit our <a href="/company/press" className="text-primary hover:underline">Press page</a></li>
-                </ul>
-              </div>
+
             </div>
 
             {/* Right Column - Form */}
