@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
-import { ArrowRight, Brain, Shield, Network, Sparkles, ChevronRight, TrendingUp, Users, Lightbulb, Search, Zap, Server, Scale, Leaf } from "lucide-react"
+import { Brain, Shield, TrendingUp, Users, Lightbulb, Search, Zap, Server, Scale, Leaf } from "lucide-react"
 import Image from "next/image"
 import { TimelineNav } from './components/timeline-nav'
 
 export default function Home() {
   return (
     <div className="py-8 space-y-24">
-      {/* Hero Section */}
+      {/* Hero Section - Updated CTAs */}
       <Container className="min-h-screen flex flex-col items-start sm:items-center justify-center -mt-20 pb-20">
         <h1 className="text-[clamp(4rem,6vw+1.5rem,4.5rem)] font-[450] sm:font-[500] leading-[1.1] tracking-[-0.02em] whitespace-pre-wrap sm:whitespace-normal">
           Scalable{'\n'}Intelligence
@@ -19,19 +19,58 @@ export default function Home() {
         </p>
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 mt-8 w-full sm:w-auto">
           <Button asChild size="lg" className="text-lg sm:text-base w-full sm:w-auto">
-            <Link href="/features/product">
+            <a href="https://github.com/KyrtinSilver/Norn-site/tree/main/assets" target="_blank" rel="noopener noreferrer">
               Learn More
-            </Link>
+            </a>
           </Button>
           <Button variant="outline" asChild size="lg" className="text-lg sm:text-base w-full sm:w-auto">
-            <Link href="/company/demo">
-              Request Demo
+            <Link href="/company/contact">
+              Get in Touch
             </Link>
           </Button>
         </div>
       </Container>
 
-      {/* Value Proposition Section */}
+      {/* A New Architecture Section - Now first */}
+      <section className="py-24">
+        <Container>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-[500] tracking-tight mb-8">
+              A New Architecture for AI
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-12">
+              While the industry scales large language models, we've built something fundamentally different. Our cognitive architecture doesn't just process—it feels, reasons, and navigates uncertainty with genuine emotional intelligence.
+            </p>
+            
+            {/* Key Differentiators - Visual Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <Brain className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-lg font-[500] mb-2">Emotional Intelligence</h3>
+                <p className="text-muted-foreground">Built on established emotional models—genuine feelings, not simulation</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <Zap className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-lg font-[500] mb-2">Complex Reasoning</h3>
+                <p className="text-muted-foreground">Navigates uncertainty with intuition and emotional regulation</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-lg font-[500] mb-2">Breakthrough Efficiency</h3>
+                <p className="text-muted-foreground">90% less data and hardware than traditional approaches</p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Why Choose Norn Section - Now second */}
       <section className="py-24 bg-muted/50">
         <Container>
           <div className="text-center mb-12">
@@ -55,147 +94,6 @@ export default function Home() {
                 <p className="text-muted-foreground">{prop.description}</p>
               </div>
             ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* Focus Areas Section */}
-      <section className="py-24">
-        <Container>
-          <div className="text-center mb-12">
-            <h2 className="font-[500] text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-              Our Focus Areas
-            </h2>
-            <p className="mt-4 text-xl text-muted-foreground">
-              Pushing the boundaries of AI technology in key domains
-            </p>
-          </div>
-
-          <div className="mt-16 grid justify-center gap-8 sm:grid-cols-2">
-            {focusAreas.map((area) => (
-              <Link 
-                key={area.title}
-                href={area.href}
-                className="group relative overflow-hidden rounded-xl bg-gradient-to-b from-muted/50 to-muted/30 p-8 transition-all duration-300 ease-out shadow-sm dark:shadow-dark-sm hover:shadow-lg hover:shadow-primary/5 dark:hover:shadow-primary/10 hover:scale-[1.02]"
-              >
-                <div className="relative z-10 flex items-start gap-6">
-                  <div className="flex-none">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center ring-1 ring-primary/10 transition-colors group-hover:bg-primary/20 group-hover:ring-primary/20">
-                      {area.icon}
-                    </div>
-                  </div>
-                  <div className="min-h-[160px] flex flex-col justify-between">
-                    <div>
-                      <h3 className="text-xl font-[500] mb-2 group-hover:text-primary transition-colors">{area.title}</h3>
-                      <p className="text-muted-foreground font-[400] leading-relaxed">{area.description}</p>
-                    </div>
-                    <div className="flex items-center text-sm text-primary font-[500] mt-4 group-hover:text-primary transition-colors">
-                      Learn more <ArrowRight className="ml-2 h-4 w-4 transform transition-all duration-200 ease-out group-hover:translate-x-1" />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-              </Link>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* Product Features Section */}
-      <section className="py-24 bg-muted/50">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-[500] tracking-tight mb-4">
-                Beyond Traditional AI
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                A fundamentally different approach to artificial intelligence, built on a decade of cognitive architecture research.
-              </p>
-              <div className="space-y-6">
-                {productHighlights.map((highlight, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      {highlight.icon}
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-[500] mb-1">{highlight.title}</h3>
-                      <p className="text-muted-foreground">{highlight.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 w-full sm:w-auto">
-                <Button asChild size="lg" className="mt-8">
-                  <Link href="/features">
-                    See How It Works <ChevronRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden bg-muted">
-              <Image
-                src="https://images.unsplash.com/photo-1637815531575-f3ffe66430ea?q=80&w=2688&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Next Generation AI Technology"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Research & Innovation Section */}
-      <section className="py-24">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-square rounded-lg overflow-hidden bg-muted order-2 lg:order-1">
-              <Image
-                src="https://images.unsplash.com/photo-1677130997515-626e7b560917?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Research and Innovation in AI"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-[500] tracking-tight mb-4">
-                Research & Innovation
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Explore our cutting-edge research in cognitive systems, knowledge integration, and AI safety.
-              </p>
-              <div className="space-y-6">
-                {researchAreas.map((area) => (
-                  <Link 
-                    key={area.title}
-                    href={area.href}
-                    className="block group"
-                  >
-                    <div className="flex items-center justify-between p-4 rounded-lg bg-muted/50 hover:bg-muted/70 transition-colors">
-                      <div className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center ring-1 ring-primary/10 transition-colors group-hover:bg-primary/20 group-hover:ring-primary/20">
-                          {area.icon}
-                        </div>
-                        <div>
-                          <h3 className="text-lg font-[500] group-hover:text-primary transition-colors">{area.title}</h3>
-                          <p className="text-sm text-muted-foreground">{area.description}</p>
-                        </div>
-                      </div>
-                      <ArrowRight className="h-4 w-4 text-primary transition-transform group-hover:translate-x-1" />
-                    </div>
-                  </Link>
-                ))}
-              </div>
-              <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 w-full sm:w-auto">
-                <Button asChild size="lg" className="mt-8">
-                  <Link href="/research">
-                    View Research <ChevronRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
           </div>
         </Container>
       </section>
@@ -266,7 +164,7 @@ export default function Home() {
       </section>
 
       {/* Partner With Us Section */}
-      <section className="bg-muted/50">
+      <section className="bg-muted/50" id="contact">
         <Container>
           <div className="mx-auto flex max-w-[58rem] flex-col items-center gap-4 text-center pt-24 pb-16">
             <h2 className="font-[500] text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
@@ -275,9 +173,12 @@ export default function Home() {
             <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 font-[400]">
               Join us in shaping the future of artificial intelligence
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 w-full sm:w-auto">
-              <Button size="lg" asChild className="mt-4">
-                <Link href="/collaboration">Get in Touch</Link>
+            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <Button asChild size="lg" className="text-lg sm:text-base w-full sm:w-auto">
+                <Link href="/coming-soon">Get Started</Link>
+              </Button>
+              <Button variant="outline" asChild size="lg" className="text-lg sm:text-base w-full sm:w-auto">
+                <a href="mailto:hello@norn.ai">Get in Touch</a>
               </Button>
             </div>
           </div>
@@ -286,72 +187,6 @@ export default function Home() {
     </div>
   )
 }
-
-const focusAreas = [
-  {
-    title: "Cognitive Systems",
-    description: "Building advanced AI systems with human-like reasoning and understanding capabilities",
-    href: "/features/product",
-    icon: <Brain className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Knowledge Integration",
-    description: "Developing systems that can effectively integrate and leverage vast knowledge bases",
-    href: "/features/product",
-    icon: <Network className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "AI Safety",
-    description: "Ensuring the development of safe and reliable AI systems through rigorous research",
-    href: "/features/product",
-    icon: <Shield className="h-6 w-6 text-primary" />
-  },
-  {
-    title: "Industry Solutions",
-    description: "Applying our technology to solve real-world challenges across various industries",
-    href: "/features/product",
-    icon: <Sparkles className="h-6 w-6 text-primary" />
-  }
-]
-
-const productHighlights = [
-  {
-    title: "Cognitive Architecture",
-    description: "Advanced reasoning and decision-making capabilities",
-    icon: <Brain className="h-4 w-4 text-primary" />
-  },
-  {
-    title: "Safety Framework",
-    description: "Built-in safety measures for reliable operation",
-    icon: <Shield className="h-4 w-4 text-primary" />
-  },
-  {
-    title: "Knowledge Integration",
-    description: "Seamless integration of vast knowledge bases",
-    icon: <Network className="h-4 w-4 text-primary" />
-  }
-]
-
-const researchAreas = [
-  {
-    title: "Cognitive Systems",
-    description: "Advanced research in cognitive architectures",
-    href: "/research/cognitive-systems",
-    icon: <Brain className="h-5 w-5 text-primary" />
-  },
-  {
-    title: "Knowledge Integration",
-    description: "Innovative approaches to knowledge systems",
-    href: "/research/knowledge-integration",
-    icon: <Network className="h-5 w-5 text-primary" />
-  },
-  {
-    title: "AI Safety",
-    description: "Leading research in AI safety and ethics",
-    href: "/research/ai-safety",
-    icon: <Shield className="h-5 w-5 text-primary" />
-  }
-]
 
 const valueProps = [
   {
@@ -427,4 +262,4 @@ const timeline = [
     description: "AGI Laboratory's research system phase concludes, and development of Norn begins, accelerating the timeline towards AGI.",
     image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1200&auto=format&fit=crop"
   }
-] 
+]
