@@ -39,7 +39,7 @@ export default function Home() {
               A New Architecture for AI
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-12">
-              While the industry scales large language models, we've built something fundamentally different. Our cognitive architecture doesn't just process—it feels, reasons, and navigates uncertainty with genuine emotional intelligence.
+              While the industry scales large language models, we've built something fundamentally different. Our cognitive architecture doesn't just process—it feels, reasons, and navigates uncertainty through human-mediated emotions.
             </p>
             
             {/* Key Differentiators - Visual Grid */}
@@ -49,7 +49,7 @@ export default function Home() {
                   <Brain className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-[500] mb-2">Emotional Intelligence</h3>
-                <p className="text-muted-foreground">Built on established emotional models—genuine feelings, not simulation</p>
+                <p className="text-muted-foreground">Built on Plutchik's emotional model with human-mediated feelings, not simulation</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
