@@ -16,7 +16,7 @@ export function GenericComingSoon() {
               Coming Soon
             </h1>
             <p className="text-xl font-[400] text-muted-foreground mb-8">
-              This feature is in active development. Stay tuned for updates.
+              This page is in active development. Stay tuned for updates.
             </p>
             <Button asChild size="lg">
               <Link href="/">
