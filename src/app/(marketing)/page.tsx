@@ -49,7 +49,7 @@ export default function Home() {
                   <Brain className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-[500] mb-2">Emotional Intelligence</h3>
-                <p className="text-muted-foreground">Built on Plutchik's emotional model with human-mediated feelings, not simulation</p>
+                <p className="text-muted-foreground">Built on Plutchik's emotional model with human-mediated emotions</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
