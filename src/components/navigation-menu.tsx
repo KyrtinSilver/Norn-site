@@ -94,7 +94,7 @@ export function NavigationMenu() {
           </nav>
           <div className="flex items-center gap-4 md:ml-0 ml-auto">
             <a
-              href="https://github.com/Norn-site/Norn-site/tree/main/assets"
+              href="https://github.com/KyrtinSilver/Norn-site/tree/main/assets"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-[--header-border] bg-background dark:bg-accent/20 hover:bg-accent/10 dark:hover:bg-accent/60 hover:text-accent-foreground h-9 px-4 rounded-md opacity-60 hover:opacity-100"

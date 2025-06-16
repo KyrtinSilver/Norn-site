@@ -1,5 +1,6 @@
 import { ComingSoon } from "@/components/coming-soon"
 import { docsConfig } from "@/config/docs"
+import { notFound } from "next/navigation"
 
 interface DocsPageProps {
   params: {
@@ -24,10 +25,13 @@ export function generateStaticParams() {
   return paths
 }
 
-export default function DocsPage({ params }: DocsPageProps) {
-  // If it's the main docs page, return null (it will be handled by the root docs/page.tsx)
-  if (params.slug.length === 0) {
-    return null
+export default async function DocsPage({ params }: DocsPageProps) {
+  const doc = docsConfig.sidebarNav
+    .flatMap((section) => section.items)
+    .find((item) => item.href === `/docs/${params.slug.join("/")}`)
+
+  if (!doc) {
+    return notFound()
   }
 
   return <ComingSoon />
