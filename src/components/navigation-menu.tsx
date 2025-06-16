@@ -90,38 +90,17 @@ export function NavigationMenu() {
             </div>
           </Link>
           <nav className="hidden md:flex flex-1 items-center justify-center space-x-8">
-            <Link
-              href="/features/industries"
-              className="text-sm opacity-60 hover:opacity-100 transition-opacity"
-            >
-              Industries
-            </Link>
-            <Link
-              href="/features"
-              className="text-sm opacity-60 hover:opacity-100 transition-opacity"
-            >
-              Features
-            </Link>
-            <Link
-              href="/research"
-              className="text-sm opacity-60 hover:opacity-100 transition-opacity"
-            >
-              Research
-            </Link>
-            <Link
-              href="/company"
-              className="text-sm opacity-60 hover:opacity-100 transition-opacity"
-            >
-              Company
-            </Link>
+            {/* Central navigation links removed */}
           </nav>
           <div className="flex items-center gap-4 md:ml-0 ml-auto">
-            <Link
-              href="/docs"
+            <a
+              href="https://github.com/Norn-site/Norn-site/tree/main/assets"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-[--header-border] bg-background dark:bg-accent/20 hover:bg-accent/10 dark:hover:bg-accent/60 hover:text-accent-foreground h-9 px-4 rounded-md opacity-60 hover:opacity-100"
             >
               Docs
-            </Link>
+            </a>
             <ModeToggle />
             <Button 
               variant="ghost" 
@@ -139,34 +118,7 @@ export function NavigationMenu() {
       {isOpen && (
         <div className="fixed inset-0 top-[var(--header-height)] z-40 bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
           <nav className="flex flex-col items-center justify-center h-full py-8">
-            <Link 
-              href="/features/industries" 
-              className="w-full text-center py-4 text-2xl font-medium opacity-60 hover:opacity-100 transition-opacity"
-              onClick={() => setIsOpen(false)}
-            >
-              Industries
-            </Link>
-            <Link 
-              href="/features" 
-              className="w-full text-center py-4 text-2xl font-medium opacity-60 hover:opacity-100 transition-opacity"
-              onClick={() => setIsOpen(false)}
-            >
-              Features
-            </Link>
-            <Link 
-              href="/research" 
-              className="w-full text-center py-4 text-2xl font-medium opacity-60 hover:opacity-100 transition-opacity"
-              onClick={() => setIsOpen(false)}
-            >
-              Research
-            </Link>
-            <Link 
-              href="/company" 
-              className="w-full text-center py-4 text-2xl font-medium opacity-60 hover:opacity-100 transition-opacity"
-              onClick={() => setIsOpen(false)}
-            >
-              Company
-            </Link>
+            {/* Mobile navigation links removed */}
           </nav>
         </div>
       )}
