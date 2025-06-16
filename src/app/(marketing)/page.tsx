@@ -36,10 +36,10 @@ export default function Home() {
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-[500] tracking-tight mb-8">
-              A New Architecture for AI
+              New Architecture
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-12">
-              While the industry scales large language models, we've built something fundamentally different. Our cognitive architecture doesn't just process—it feels, reasons, and navigates uncertainty through human-mediated emotions.
+              While the industry scales large language models, we've built something fundamentally different. Our graph-based cognitive architecture feels, reasons, and navigates uncertainty and bias through human-mediated emotions.
             </p>
             
             {/* Key Differentiators - Visual Grid */}
@@ -78,7 +78,7 @@ export default function Home() {
               Why Choose Norn?
             </h2>
             <p className="text-xl text-muted-foreground">
-              Next-generation AI technology that transforms your organization
+              Next-generation mASI (mediated artificial superintelligence) that transforms your organization
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
