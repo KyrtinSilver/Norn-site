@@ -49,7 +49,7 @@ export default function ContactPage() {
         
         // Wait for toast to be seen before redirecting
         await new Promise(resolve => setTimeout(resolve, 2000))
-        router.push('/company/contact/?success=true')
+        router.push('/contact/?success=true')
       } else {
         toast.error(result.message || "Failed to send message. Please try again.", {
           className: "group",

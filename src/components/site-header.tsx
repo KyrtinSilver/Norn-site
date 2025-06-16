@@ -54,7 +54,7 @@ export function SiteHeader() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/company/contact" className={navigationMenuTriggerStyle()}>
+                <Link href="/contact" className={navigationMenuTriggerStyle()}>
                   Contact
                 </Link>
               </NavigationMenuItem>
