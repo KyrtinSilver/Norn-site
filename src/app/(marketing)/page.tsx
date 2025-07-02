@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
-import { Brain, Shield, TrendingUp, Users, Lightbulb, Search, Zap, Server, Scale, Leaf } from "lucide-react"
+import { Brain, Heart, Shield, TrendingUp, Users, Lightbulb, Search, Zap, Server, Scale, Leaf } from "lucide-react"
 import Image from "next/image"
 import { TimelineNav } from './components/timeline-nav'
 
@@ -46,21 +46,21 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
               <div className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Brain className="h-8 w-8 text-primary" />
+                  <Heart className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-[500] mb-2">Emotional Intelligence</h3>
                 <p className="text-muted-foreground">Built on Plutchik's emotional model with human-mediated emotions</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Zap className="h-8 w-8 text-primary" />
+                  <Brain className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-[500] mb-2">Complex Reasoning</h3>
                 <p className="text-muted-foreground">Navigates uncertainty with intuition and emotional regulation</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Shield className="h-8 w-8 text-primary" />
+                  <Zap className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-lg font-[500] mb-2">Breakthrough Efficiency</h3>
                 <p className="text-muted-foreground">90% less data and hardware than traditional approaches</p>
